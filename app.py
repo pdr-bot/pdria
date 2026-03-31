@@ -8,7 +8,7 @@ arquivo = "memoria.json"
 
 # carregar memória
 if os.path.exists(arquivo):
-    with open(arquivo, "r") as f:
+    with open(arquivo, "r", encoding="utf-8") as f:
         memoria = json.load(f)
 else:
     memoria = {}
@@ -16,8 +16,8 @@ else:
 pergunta = st.text_input("Pergunte algo:")
 
 def salvar():
-    with open(arquivo, "w") as f:
-        json.dump(memoria, f)
+    with open(arquivo, "w", encoding="utf-8") as f:
+        json.dump(memoria, f, indent=4, ensure_ascii=False)
 
 if pergunta:
     pergunta = pergunta.lower()
@@ -26,19 +26,19 @@ if pergunta:
         st.success(memoria[pergunta])
     else:
         st.warning("Não sei responder isso ainda 😅")
-        
         resposta_nova = st.text_input("Me ensina:")
 
         if st.button("Aprender"):
             memoria[pergunta] = resposta_nova
             salvar()
             st.success("Aprendi! 😎")
+
 # carregar base fixa
 if os.path.exists("base.json"):
-    with open("base.json", "r") as f:
+    with open("base.json", "r", encoding="utf-8") as f:
         base_fixa = json.load(f)
 else:
-    base_fixa = {}import json
+    base_fixa = {}
 
 def carregar_base():
     try:
@@ -59,7 +59,9 @@ def responder(pergunta, base):
         if chave in pergunta:
             return base[chave]
 
-    return "Não sei ainda 😅, mas posso aprender!"def aprender(pergunta, resposta):
+    return "Não sei ainda 😅, mas posso aprender!"
+
+def aprender(pergunta, resposta):
     base = carregar_base()
     base[pergunta] = resposta
 
