@@ -1,21 +1,4 @@
-import json
-
-# Carrega seu JSON original
-with open("base.json", "r", encoding="utf-8") as f:
-    memoria = json.load(f)
-
-# Novas perguntas
-novas = {
-    "como esta o tempo?": "Está ensolarado ☀️",
-    "qual seu time?": "Vasco ⚽"
-}
-
-# Atualiza
-memoria.update(novas)
-
-# Salva de volta
-with open("base.json", "w", encoding="utf-8") as f:
-    json.dump(memoria, f, ensure_ascii=False, indent=4){
+{
   "oi": "Oi! Tudo bem?",
   "oi!": "Oi! Tudo bem?",
   "oi.": "Oi! Tudo bem?",
@@ -188,63 +171,4 @@ with open("base.json", "w", encoding="utf-8") as f:
   "qual seu objetivo?": "Ajudar você no que precisar!",
   "vc pode errar": "Sim, ainda estou aprendendo 😅",
   "vc pode errar?": "Sim, ainda estou aprendendo 😅"
-  "quanto é 5+3": "5+3 é 8.",
-  "5+3": "5+3 é 8.",
-  "quanto é 5 + 3": "5+3 é 8.",
-  "quanto é 9-4": "9-4 é 5.",
-  "9-4": "9-4 é 5.",
-  "quanto é 9 - 4": "9-4 é 5.",
-  "quanto é 7x2": "7x2 é 14.",
-  "7x2": "7x2 é 14.",
-  "quanto é 7 x 2": "7x2 é 14.",
-  "quanto é 8/2": "8/2 é 4.",
-  "8/2": "8/2 é 4.",
-  "quanto é 8 / 2": "8/2 é 4.",
-  "qual a capital do mexico": "A capital do México é Cidade do México 🇲🇽",
-  "capital do mexico": "A capital do México é Cidade do México 🇲🇽",
-  "qual é a capital do mexico": "A capital do México é Cidade do México 🇲🇽",
-  "qual a capital do canada": "A capital do Canadá é Ottawa 🇨🇦",
-  "capital do canada": "A capital do Canadá é Ottawa 🇨🇦",
-  "qual é a capital do canada": "A capital do Canadá é Ottawa 🇨🇦",
-  "qual a capital da espanha": "A capital da Espanha é Madrid 🇪🇸",
-  "capital da espanha": "A capital da Espanha é Madrid 🇪🇸",
-  "qual é a capital da espanha": "A capital da Espanha é Madrid 🇪🇸",
-  "quem inventou a lâmpada": "Thomas Edison 💡",
-  "inventor da lâmpada": "Thomas Edison 💡",
-  "quem criou a lâmpada": "Thomas Edison 💡",
-  "quem inventou o telefone": "Alexander Graham Bell ☎️",
-  "inventor do telefone": "Alexander Graham Bell ☎️",
-  "quem criou o telefone": "Alexander Graham Bell ☎️",
-  "quem inventou o avião": "Irmãos Wright ✈️",
-  "inventor do avião": "Irmãos Wright ✈️",
-  "quem criou o avião": "Irmãos Wright ✈️",
-  "quem pintou a mona lisa": "Leonardo da Vinci 🎨",
-  "quem fez a mona lisa": "Leonardo da Vinci 🎨",
-  "quem pintou a última ceia": "Leonardo da Vinci 🎨",
-  "quem escreveu dom quixote": "Miguel de Cervantes 📚",
-  "autor de dom quixote": "Miguel de Cervantes 📚",
-  "quem escreveu guerra e paz": "Liev Tolstói 📚",
-  "autor de guerra e paz": "Liev Tolstói 📚",
-  "quem escreveu hamlet": "William Shakespeare 📚",
-  "autor de hamlet": "William Shakespeare 📚",
-  "quem escreveu o pequeno principe": "Antoine de Saint-Exupéry 📚",
-  "autor do pequeno principe": "Antoine de Saint-Exupéry 📚",
-  "qual é o elemento químico h": "H é Hidrogênio.",
-  "qual é o elemento químico o": "O é Oxigênio.",
-  "qual é o elemento químico c": "C é Carbono.",
-  "qual é o elemento químico n": "N é Nitrogênio.",
-  "qual é o elemento químico fe": "Fe é Ferro.",
-  "qual é o elemento químico au": "Au é Ouro.",
-  "qual é o elemento químico ag": "Ag é Prata.",
-  "qual é o elemento químico hg": "Hg é Mercúrio.",
-  "qual é o elemento químico he": "He é Hélio.",
-  "qual é o elemento químico ne": "Ne é Neônio.",
-  "me conte um fato curioso": "Sabia que o polvo tem três corações? 😮",
-  "conte um fato curioso": "Sabia que o polvo tem três corações? 😮",
-  "você gosta de música": "Sim! Adoro todos os estilos 🎵",
-  "gosta de música": "Sim! Adoro todos os estilos 🎵",
-  "qual seu filme favorito": "Eu gosto de filmes de aventura e ficção científica! 🚀",
-  "qual é o seu filme favorito": "Eu gosto de filmes de aventura e ficção científica! 🚀",
-  "qual é o seu esporte favorito": "Gosto de esportes que exigem estratégia, como xadrez e futebol! ⚽",
-  "qual seu esporte favorito": "Gosto de esportes que exigem estratégia, como xadrez e futebol! ⚽"
 }
