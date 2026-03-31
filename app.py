@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 import os
+import string
 
 st.title("🤖 IA que aprende")
 
@@ -38,14 +39,17 @@ if "pergunta_atual" not in st.session_state:
 pergunta = st.text_input("Digite sua pergunta:")
 
 def processar():
+    # Normaliza a pergunta: minusculas + remove pontuação
     pergunta_lower = pergunta.strip().lower()
-    if pergunta_lower in memoria:
-        st.session_state.resposta = memoria[pergunta_lower]
+    pergunta_normalizada = pergunta_lower.translate(str.maketrans('', '', string.punctuation))
+
+    if pergunta_normalizada in memoria:
+        st.session_state.resposta = memoria[pergunta_normalizada]
         st.session_state.ensinar = False
     else:
         st.session_state.resposta = f"Não sei responder '{pergunta}'. Me ensine!"
         st.session_state.ensinar = True
-        st.session_state.pergunta_atual = pergunta_lower
+        st.session_state.pergunta_atual = pergunta_normalizada
 
 if st.button("Enviar") and pergunta:
     processar()
@@ -54,7 +58,9 @@ if st.button("Enviar") and pergunta:
 if st.session_state.ensinar:
     resposta_usuario = st.text_input(f"Qual seria a resposta correta para '{st.session_state.pergunta_atual}'?")
     if st.button("Salvar Resposta") and resposta_usuario:
-        memoria[st.session_state.pergunta_atual] = resposta_usuario
+        # Normaliza a pergunta antes de salvar
+        pergunta_limpa = st.session_state.pergunta_atual.translate(str.maketrans('', '', string.punctuation))
+        memoria[pergunta_limpa] = resposta_usuario
         salvar()
         st.session_state.resposta = "Perfeito! Agora eu sei essa resposta."
         st.session_state.ensinar = False
