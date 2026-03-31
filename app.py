@@ -1,24 +1,8 @@
 import streamlit as st
-from sklearn.linear_model import LinearRegression
-
-x = [[1], [2], [3], [4], [5]]
-y = [2, 4, 5, 8, 10]
-
-modelo = LinearRegression()
-modelo.fit(x, y)
-
-st.title("IA de previsão de nota")
-
-horas = st.slider("Horas de estudo", 0, 10)
-
-if st.button("Prever"):
-    resultado = modelo.predict([[horas]])
-    st.write(f"Nota prevista: {resultado[0]:.2f}")
-import streamlit as st
 import json
 import os
 
-st.title("🤖 IA que aprende - Pedro")
+st.title("🤖 IA que aprende")
 
 arquivo = "memoria.json"
 
@@ -54,4 +38,30 @@ if os.path.exists("base.json"):
     with open("base.json", "r") as f:
         base_fixa = json.load(f)
 else:
-    base_fixa = {}
+    base_fixa = {}import json
+
+def carregar_base():
+    try:
+        with open("base.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return {}
+
+def responder(pergunta, base):
+    pergunta = pergunta.lower().strip()
+
+    # resposta exata
+    if pergunta in base:
+        return base[pergunta]
+
+    # tentativa inteligente (palavra-chave)
+    for chave in base:
+        if chave in pergunta:
+            return base[chave]
+
+    return "Não sei ainda 😅, mas posso aprender!"def aprender(pergunta, resposta):
+    base = carregar_base()
+    base[pergunta] = resposta
+
+    with open("base.json", "w", encoding="utf-8") as f:
+        json.dump(base, f, indent=4, ensure_ascii=False)
