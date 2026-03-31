@@ -1,6 +1,8 @@
 import streamlit as st
 import json
 import os
+import string
+import re  # <- adicionado para processamento permissivo do JSON
 
 st.title("🤖 IA que aprende")
 
@@ -8,18 +10,24 @@ st.title("🤖 IA que aprende")
 base_arquivo = "base.json"  # <- seu arquivo com respostas iniciais
 memoria_arquivo = "memoria.json"  # <- arquivo que vai armazenar aprendizado novo
 
+# Função para carregar JSON mesmo com vírgulas finais
+def carregar_json_permissivo(caminho):
+    with open(caminho, "r", encoding="utf-8") as f:
+        conteudo = f.read()
+        # Remove vírgula final antes de fechar objeto ou array
+        conteudo = re.sub(r",(\s*[}\]])", r"\1", conteudo)
+        return json.loads(conteudo)
+
 # Carregar base
 if os.path.exists(base_arquivo):
-    with open(base_arquivo, "r", encoding="utf-8") as f:
-        memoria = json.load(f)
+    memoria = carregar_json_permissivo(base_arquivo)
 else:
     memoria = {}
 
 # Carregar memória já aprendida, se existir
 if os.path.exists(memoria_arquivo):
-    with open(memoria_arquivo, "r", encoding="utf-8") as f:
-        memoria_aprendida = json.load(f)
-        memoria.update(memoria_aprendida)
+    memoria_aprendida = carregar_json_permissivo(memoria_arquivo)
+    memoria.update(memoria_aprendida)
 
 # Função para salvar aprendizado novo
 def salvar():
@@ -38,14 +46,17 @@ if "pergunta_atual" not in st.session_state:
 pergunta = st.text_input("Digite sua pergunta:")
 
 def processar():
+    # Normaliza a pergunta: minúsculas + remove pontuação
     pergunta_lower = pergunta.strip().lower()
-    if pergunta_lower in memoria:
-        st.session_state.resposta = memoria[pergunta_lower]
+    pergunta_normalizada = pergunta_lower.translate(str.maketrans('', '', string.punctuation))
+
+    if pergunta_normalizada in memoria:
+        st.session_state.resposta = memoria[pergunta_normalizada]
         st.session_state.ensinar = False
     else:
         st.session_state.resposta = f"Não sei responder '{pergunta}'. Me ensine!"
         st.session_state.ensinar = True
-        st.session_state.pergunta_atual = pergunta_lower
+        st.session_state.pergunta_atual = pergunta_normalizada
 
 if st.button("Enviar") and pergunta:
     processar()
@@ -54,7 +65,9 @@ if st.button("Enviar") and pergunta:
 if st.session_state.ensinar:
     resposta_usuario = st.text_input(f"Qual seria a resposta correta para '{st.session_state.pergunta_atual}'?")
     if st.button("Salvar Resposta") and resposta_usuario:
-        memoria[st.session_state.pergunta_atual] = resposta_usuario
+        # Normaliza a pergunta antes de salvar
+        pergunta_limpa = st.session_state.pergunta_atual.translate(str.maketrans('', '', string.punctuation))
+        memoria[pergunta_limpa] = resposta_usuario
         salvar()
         st.session_state.resposta = "Perfeito! Agora eu sei essa resposta."
         st.session_state.ensinar = False
