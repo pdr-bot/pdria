@@ -2,12 +2,12 @@ import streamlit as st
 import json
 import os
 import string
-import re  # <- adicionado para processamento permissivo do JSON
+import re  # para processamento permissivo do JSON
 
 st.title("🤖 IA que aprende")
 
 # Arquivo que contém respostas pré-definidas
-base_arquivo = "base.json"  # <- seu arquivo com respostas iniciais
+base_arquivo = "base.json"        # <- seu arquivo com respostas iniciais
 memoria_arquivo = "memoria.json"  # <- arquivo que vai armazenar aprendizado novo
 
 # Função para carregar JSON mesmo com vírgulas finais
