@@ -2,28 +2,31 @@ import streamlit as st
 import json
 import os
 
-st.set_page_config(page_title="IA que aprende", page_icon="🤖")
+st.title("🤖 IA que aprende")
 
-arquivo = "memoria.json"
+# Arquivo que contém respostas pré-definidas
+base_arquivo = "base.json"  # <- seu arquivo com respostas iniciais
+memoria_arquivo = "memoria.json"  # <- arquivo que vai armazenar aprendizado novo
 
-# Carregar memória
-if os.path.exists(arquivo):
-    with open(arquivo, "r", encoding="utf-8") as f:
+# Carregar base
+if os.path.exists(base_arquivo):
+    with open(base_arquivo, "r", encoding="utf-8") as f:
         memoria = json.load(f)
 else:
-    # Respostas pré-definidas
-    memoria = {
-        "olá": "Olá! Como posso ajudar?",
-        "tudo bem?": "Tudo sim! E você?",
-        "qual é seu nome?": "Eu sou uma IA que aprende com você!"
-    }
+    memoria = {}
 
-# Função para salvar memória
+# Carregar memória já aprendida, se existir
+if os.path.exists(memoria_arquivo):
+    with open(memoria_arquivo, "r", encoding="utf-8") as f:
+        memoria_aprendida = json.load(f)
+        memoria.update(memoria_aprendida)
+
+# Função para salvar aprendizado novo
 def salvar():
-    with open(arquivo, "w", encoding="utf-8") as f:
+    with open(memoria_arquivo, "w", encoding="utf-8") as f:
         json.dump(memoria, f, ensure_ascii=False, indent=4)
 
-# Inicializar session state
+# Session state
 if "resposta" not in st.session_state:
     st.session_state.resposta = ""
 if "ensinar" not in st.session_state:
@@ -31,9 +34,7 @@ if "ensinar" not in st.session_state:
 if "pergunta_atual" not in st.session_state:
     st.session_state.pergunta_atual = ""
 
-st.title("🤖 IA que aprende")
-
-# Input principal
+# Input
 pergunta = st.text_input("Digite sua pergunta:")
 
 def processar():
@@ -49,7 +50,7 @@ def processar():
 if st.button("Enviar") and pergunta:
     processar()
 
-# Se precisa ensinar a resposta
+# Ensino de nova resposta
 if st.session_state.ensinar:
     resposta_usuario = st.text_input(f"Qual seria a resposta correta para '{st.session_state.pergunta_atual}'?")
     if st.button("Salvar Resposta") and resposta_usuario:
