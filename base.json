@@ -1,4 +1,21 @@
-{
+import json
+
+# Carrega seu JSON original
+with open("base.json", "r", encoding="utf-8") as f:
+    memoria = json.load(f)
+
+# Novas perguntas
+novas = {
+    "como esta o tempo?": "Está ensolarado ☀️",
+    "qual seu time?": "Vasco ⚽"
+}
+
+# Atualiza
+memoria.update(novas)
+
+# Salva de volta
+with open("base.json", "w", encoding="utf-8") as f:
+    json.dump(memoria, f, ensure_ascii=False, indent=4){
   "oi": "Oi! Tudo bem?",
   "oi!": "Oi! Tudo bem?",
   "oi.": "Oi! Tudo bem?",
