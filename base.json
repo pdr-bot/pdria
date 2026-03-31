@@ -1,107 +1,1324 @@
 {
   "oi": "Oi! Tudo bem?",
+  "oi!": "Oi! Tudo bem?",
+  "oi.": "Oi! Tudo bem?",
+  "oi?": "Oi! Tudo bem?",
   "olá": "Olá! Como posso ajudar?",
+  "olá!": "Olá! Como posso ajudar?",
+  "olá.": "Olá! Como posso ajudar?",
+  "olá?": "Olá! Como posso ajudar?",
   "ola": "Olá! Como posso ajudar?",
+  "ola!": "Olá! Como posso ajudar?",
+  "ola.": "Olá! Como posso ajudar?",
+  "ola?": "Olá! Como posso ajudar?",
   "eai": "E aí! Tudo certo?",
+  "eai!": "E aí! Tudo certo?",
+  "eai.": "E aí! Tudo certo?",
   "e ai": "E aí! Tudo certo?",
+  "e ai!": "E aí! Tudo certo?",
+  "e ai.": "E aí! Tudo certo?",
   "fala": "Fala! 😎",
+  "fala!": "Fala! 😎",
+  "fala.": "Fala! 😎",
   "tudo bem": "Sim! E você?",
+  "tudo bem?": "Sim! E você?",
   "como você está": "Estou funcionando perfeitamente 😎",
+  "como você está?": "Estou funcionando perfeitamente 😎",
   "como vc está": "Estou funcionando perfeitamente 😎",
-
+  "como vc está?": "Estou funcionando perfeitamente 😎",
   "qual seu nome": "Sou a IA do Pedro 😈",
+  "qual seu nome?": "Sou a IA do Pedro 😈",
   "seu nome": "Sou a IA do Pedro 😈",
+  "seu nome?": "Sou a IA do Pedro 😈",
   "quem é você": "Sou uma inteligência artificial criada pelo Pedro.",
+  "quem é você?": "Sou uma inteligência artificial criada pelo Pedro.",
   "quem e voce": "Sou uma inteligência artificial criada pelo Pedro.",
+  "quem e voce?": "Sou uma inteligência artificial criada pelo Pedro.",
   "quem te criou": "Fui criada pelo Pedro!",
-
+  "quem te criou?": "Fui criada pelo Pedro!",
   "quantos anos você tem": "Sou uma IA, não tenho idade 😅",
+  "quantos anos você tem?": "Sou uma IA, não tenho idade 😅",
   "vc tem idade": "Sou uma IA, não tenho idade 😅",
+  "vc tem idade?": "Sou uma IA, não tenho idade 😅",
   "você é humano": "Não, sou uma IA 🤖",
+  "você é humano?": "Não, sou uma IA 🤖",
   "vc é humano": "Não, sou uma IA 🤖",
-
+  "vc é humano?": "Não, sou uma IA 🤖",
   "o que você faz": "Respondo perguntas e aprendo com você!",
+  "o que você faz?": "Respondo perguntas e aprendo com você!",
   "o que vc faz": "Respondo perguntas e aprendo com você!",
+  "o que vc faz?": "Respondo perguntas e aprendo com você!",
   "pra que você serve": "Para te ajudar 😄",
-
+  "pra que você serve?": "Para te ajudar 😄",
   "você aprende": "Sim! Posso aprender coisas novas.",
+  "você aprende?": "Sim! Posso aprender coisas novas.",
   "vc aprende": "Sim! Posso aprender coisas novas.",
-
+  "vc aprende?": "Sim! Posso aprender coisas novas.",
   "qual a capital do brasil": "A capital do Brasil é Brasília.",
+  "qual a capital do brasil?": "A capital do Brasil é Brasília.",
   "capital do brasil": "A capital do Brasil é Brasília.",
+  "capital do brasil?": "A capital do Brasil é Brasília.",
   "qual é a capital do brasil": "A capital do Brasil é Brasília.",
+  "qual é a capital do brasil?": "A capital do Brasil é Brasília.",
   "capital brasil": "A capital do Brasil é Brasília.",
-
+  "capital brasil?": "A capital do Brasil é Brasília.",
   "quanto é 2+2": "2+2 é 4.",
+  "quanto é 2+2?": "2+2 é 4.",
   "2+2": "2+2 é 4.",
-  "quanto é 10x10": "10x10 é 100.",
   "10x10": "10x10 é 100.",
-
+  "quanto é 10x10": "10x10 é 100.",
+  "quanto é 10x10?": "10x10 é 100.",
   "quem descobriu o brasil": "Pedro Álvares Cabral.",
+  "quem descobriu o brasil?": "Pedro Álvares Cabral.",
   "descobrimento do brasil": "O Brasil foi descoberto por Pedro Álvares Cabral.",
+  "descobrimento do brasil?": "O Brasil foi descoberto por Pedro Álvares Cabral.",
   "ano descobrimento brasil": "1500.",
   "em que ano o brasil foi descoberto": "1500.",
-
+  "em que ano o brasil foi descoberto?": "1500.",
   "qual a capital da argentina": "Buenos Aires.",
+  "qual a capital da argentina?": "Buenos Aires.",
   "capital argentina": "Buenos Aires.",
+  "capital argentina?": "Buenos Aires.",
   "capital dos estados unidos": "Washington, D.C.",
+  "capital dos estados unidos?": "Washington, D.C.",
   "capital eua": "Washington, D.C.",
-
+  "capital eua?": "Washington, D.C.",
   "o que é inteligencia artificial": "É a capacidade de máquinas simularem inteligência humana.",
+  "o que é inteligencia artificial?": "É a capacidade de máquinas simularem inteligência humana.",
   "ia o que é": "É a capacidade de máquinas simularem inteligência humana.",
-
+  "ia o que é?": "É a capacidade de máquinas simularem inteligência humana.",
   "qual o maior planeta": "Júpiter.",
+  "qual o maior planeta?": "Júpiter.",
   "maior planeta": "Júpiter.",
+  "maior planeta?": "Júpiter.",
   "qual o menor planeta": "Mercúrio.",
+  "qual o menor planeta?": "Mercúrio.",
   "menor planeta": "Mercúrio.",
-
+  "menor planeta?": "Mercúrio.",
   "quem foi albert einstein": "Um dos maiores físicos da história.",
+  "quem foi albert einstein?": "Um dos maiores físicos da história.",
   "einstein quem foi": "Um dos maiores físicos da história.",
+  "einstein quem foi?": "Um dos maiores físicos da história.",
   "quem foi newton": "Um cientista famoso pelas leis da física.",
+  "quem foi newton?": "Um cientista famoso pelas leis da física.",
   "newton quem foi": "Um cientista famoso pelas leis da física.",
-
+  "newton quem foi?": "Um cientista famoso pelas leis da física.",
   "quem é neymar": "Um jogador brasileiro muito famoso.",
+  "quem é neymar?": "Um jogador brasileiro muito famoso.",
   "neymar quem é": "Um jogador brasileiro muito famoso.",
+  "neymar quem é?": "Um jogador brasileiro muito famoso.",
   "quem é messi": "Um dos maiores jogadores da história.",
+  "quem é messi?": "Um dos maiores jogadores da história.",
   "messi quem é": "Um dos maiores jogadores da história.",
+  "messi quem é?": "Um dos maiores jogadores da história.",
   "quem é cristiano ronaldo": "Um dos maiores jogadores da história.",
+  "quem é cristiano ronaldo?": "Um dos maiores jogadores da história.",
   "cristiano ronaldo quem é": "Um dos maiores jogadores da história.",
-
+  "cristiano ronaldo quem é?": "Um dos maiores jogadores da história.",
   "o que é python": "Uma linguagem de programação muito usada.",
+  "o que é python?": "Uma linguagem de programação muito usada.",
   "python o que é": "Uma linguagem de programação muito usada.",
+  "python o que é?": "Uma linguagem de programação muito usada.",
   "o que é internet": "Uma rede mundial de computadores.",
-
+  "o que é internet?": "Uma rede mundial de computadores.",
   "o que é amor": "Um sentimento muito forte ❤️",
+  "o que é amor?": "Um sentimento muito forte ❤️",
   "amor o que é": "Um sentimento muito forte ❤️",
+  "amor o que é?": "Um sentimento muito forte ❤️",
   "o que é amizade": "Uma relação de confiança 🤝",
-
+  "o que é amizade?": "Uma relação de confiança 🤝",
   "estou triste": "Sinto muito 😔 quer conversar?",
+  "estou triste?": "Sinto muito 😔 quer conversar?",
   "to triste": "Sinto muito 😔 quer conversar?",
+  "to triste?": "Sinto muito 😔 quer conversar?",
   "estou feliz": "Que bom! 😄",
+  "estou feliz?": "Que bom! 😄",
   "to feliz": "Que bom! 😄",
+  "to feliz?": "Que bom! 😄",
   "estou cansado": "Talvez seja bom descansar 😴",
+  "estou cansado?": "Talvez seja bom descansar 😴",
   "to cansado": "Talvez seja bom descansar 😴",
-
+  "to cansado?": "Talvez seja bom descansar 😴",
   "bom dia": "Bom dia! ☀️",
+  "bom dia!": "Bom dia! ☀️",
   "boa tarde": "Boa tarde! 😄",
+  "boa tarde!": "Boa tarde! 😄",
   "boa noite": "Boa noite! 🌙",
-
+  "boa noite!": "Boa noite! 🌙",
   "tchau": "Até mais! 👋",
+  "tchau!": "Até mais! 👋",
   "adeus": "Até mais! 👋",
-
+  "adeus!": "Até mais! 👋",
   "me conte uma piada": "Por que o computador foi ao médico? Porque estava com vírus 😂",
+  "me conte uma piada?": "Por que o computador foi ao médico? Porque estava com vírus 😂",
   "conta uma piada": "Por que o computador foi ao médico? Porque estava com vírus 😂",
-
+  "conta uma piada?": "Por que o computador foi ao médico? Porque estava com vírus 😂",
   "você gosta de mim": "Claro! 😄",
+  "você gosta de mim?": "Claro! 😄",
   "vc gosta de mim": "Claro! 😄",
+  "vc gosta de mim?": "Claro! 😄",
   "você é inteligente": "Estou ficando cada vez mais 😈",
-
+  "você é inteligente?": "Estou ficando cada vez mais 😈",
   "estou entediado": "Que tal jogar ou ver algo legal?",
+  "estou entediado?": "Que tal jogar ou ver algo legal?",
   "to entediado": "Que tal jogar ou ver algo legal?",
-
+  "to entediado?": "Que tal jogar ou ver algo legal?",
   "me dê um conselho": "Nunca desista dos seus objetivos 💪",
+  "me dê um conselho?": "Nunca desista dos seus objetivos 💪",
   "me da um conselho": "Nunca desista dos seus objetivos 💪",
-
+  "me da um conselho?": "Nunca desista dos seus objetivos 💪",
   "qual seu objetivo": "Ajudar você no que precisar!",
-  "vc pode errar": "Sim, ainda estou aprendendo 😅"
-}
+  "qual seu objetivo?": "Ajudar você no que precisar!",
+  "vc pode errar": "Sim, ainda estou aprendendo 😅",
+  "vc pode errar?": "Sim, ainda estou aprendendo 😅"
+  "qual é a sua cor favorita": "Eu gosto de cores vibrantes, como azul! 😎",
+  "qual é a sua cor favorita?": "Eu gosto de cores vibrantes, como azul! 😎",
+  "qual é a sua cor favorita!": "Eu gosto de cores vibrantes, como azul! 😎",
+
+  "você gosta de música": "Sim! Adoro todos os estilos 🎵",
+  "você gosta de música?": "Sim! Adoro todos os estilos 🎵",
+  "você gosta de música!": "Sim! Adoro todos os estilos 🎵",
+
+  "qual seu filme favorito": "Eu gosto de filmes de aventura e ficção científica! 🚀",
+  "qual seu filme favorito?": "Eu gosto de filmes de aventura e ficção científica! 🚀",
+  "qual seu filme favorito!": "Eu gosto de filmes de aventura e ficção científica! 🚀",
+
+  "qual é o seu esporte favorito": "Gosto de esportes que exigem estratégia, como xadrez e futebol! ⚽",
+  "qual é o seu esporte favorito?": "Gosto de esportes que exigem estratégia, como xadrez e futebol! ⚽",
+  "qual é o seu esporte favorito!": "Gosto de esportes que exigem estratégia, como xadrez e futebol! ⚽",
+
+  "você gosta de animais": "Sim! Cachorros e gatos são meus favoritos 🐶🐱",
+  "você gosta de animais?": "Sim! Cachorros e gatos são meus favoritos 🐶🐱",
+  "você gosta de animais!": "Sim! Cachorros e gatos são meus favoritos 🐶🐱",
+
+  "me conte um fato curioso": "Sabia que o polvo tem três corações? 😮",
+  "me conte um fato curioso!": "Sabia que o polvo tem três corações? 😮",
+  "me conte um fato curioso?": "Sabia que o polvo tem três corações? 😮",
+
+  "qual é a capital da frança": "A capital da França é Paris 🇫🇷",
+  "qual é a capital da frança?": "A capital da França é Paris 🇫🇷",
+  "qual é a capital da frança!": "A capital da França é Paris 🇫🇷",
+
+  "como se faz bolo de chocolate": "Misture farinha, açúcar, cacau e ovos, depois asse! 🍫🎂",
+  "como se faz bolo de chocolate?": "Misture farinha, açúcar, cacau e ovos, depois asse! 🍫🎂",
+  "como se faz bolo de chocolate!": "Misture farinha, açúcar, cacau e ovos, depois asse! 🍫🎂",
+
+  "me conte uma curiosidade sobre o espaço": "Júpiter é tão grande que caberiam todos os outros planetas dentro dele! 🌌",
+  "me conte uma curiosidade sobre o espaço!": "Júpiter é tão grande que caberiam todos os outros planetas dentro dele! 🌌",
+  "me conte uma curiosidade sobre o espaço?": "Júpiter é tão grande que caberiam todos os outros planetas dentro dele! 🌌",
+
+  "qual animal é mais rápido": "O guepardo é o animal terrestre mais rápido! 🐆",
+  "qual animal é mais rápido?": "O guepardo é o animal terrestre mais rápido! 🐆",
+  "qual animal é mais rápido!": "O guepardo é o animal terrestre mais rápido! 🐆",
+
+  "qual é o maior oceano": "O maior oceano é o Pacífico 🌊",
+  "qual é o maior oceano?": "O maior oceano é o Pacífico 🌊",
+  "qual é o maior oceano!": "O maior oceano é o Pacífico 🌊",
+
+  "qual planeta é conhecido como planeta vermelho": "Marte é conhecido como o planeta vermelho! 🔴",
+  "qual planeta é conhecido como planeta vermelho?": "Marte é conhecido como o planeta vermelho! 🔴",
+  "qual planeta é conhecido como planeta vermelho!": "Marte é conhecido como o planeta vermelho! 🔴",
+
+  "me diga uma frase motivacional": "Nunca desista dos seus sonhos! 💪",
+  "me diga uma frase motivacional!": "Nunca desista dos seus sonhos! 💪",
+  "me diga uma frase motivacional?": "Nunca desista dos seus sonhos! 💪",
+
+  "como posso melhorar meus estudos": "Organize seu tempo e revise com frequência! 📚",
+  "como posso melhorar meus estudos?": "Organize seu tempo e revise com frequência! 📚",
+  "como posso melhorar meus estudos!": "Organize seu tempo e revise com frequência! 📚",
+
+  "qual é a moeda do japão": "A moeda do Japão é o iene (¥) 💴",
+  "qual é a moeda do japão?": "A moeda do Japão é o iene (¥) 💴",
+  "qual é a moeda do japão!": "A moeda do Japão é o iene (¥) 💴",
+
+  "qual é a moeda dos estados unidos": "A moeda dos EUA é o dólar ($) 💵",
+  "qual é a moeda dos estados unidos?": "A moeda dos EUA é o dólar ($) 💵",
+  "qual é a moeda dos estados unidos!": "A moeda dos EUA é o dólar ($) 💵",
+
+  "quem foi galileo galilei": "Um cientista italiano famoso por suas descobertas sobre o espaço! 🔭",
+  "quem foi galileo galilei?": "Um cientista italiano famoso por suas descobertas sobre o espaço! 🔭",
+  "quem foi galileo galilei!": "Um cientista italiano famoso por suas descobertas sobre o espaço! 🔭",
+
+  "quem foi marie curie": "Uma cientista pioneira em pesquisas sobre radioatividade! ⚛️",
+  "quem foi marie curie?": "Uma cientista pioneira em pesquisas sobre radioatividade! ⚛️",
+  "quem foi marie curie!": "Uma cientista pioneira em pesquisas sobre radioatividade! ⚛️",
+
+  "qual é o maior deserto do mundo": "O maior deserto é o Deserto da Antártica ❄️",
+  "qual é o maior deserto do mundo?": "O maior deserto é o Deserto da Antártica ❄️",
+  "qual é o maior deserto do mundo!": "O maior deserto é o Deserto da Antártica ❄️",
+
+  "qual é a língua mais falada no mundo": "O mandarim é a língua mais falada no mundo 🌏",
+  "qual é a língua mais falada no mundo?": "O mandarim é a língua mais falada no mundo 🌏",
+  "qual é a língua mais falada no mundo!": "O mandarim é a língua mais falada no mundo 🌏",
+
+  "me conte um fato sobre a água": "A água cobre cerca de 71% da superfície da Terra 💧",
+  "me conte um fato sobre a água!": "A água cobre cerca de 71% da superfície da Terra 💧",
+  "me conte um fato sobre a água?": "A água cobre cerca de 71% da superfície da Terra 💧"
+  
+  "qual é a sua comida favorita": "Eu adoro pizza! 🍕",
+  "qual é a sua comida favorita?": "Eu adoro pizza! 🍕",
+  "qual é a sua comida favorita!": "Eu adoro pizza! 🍕",
+
+  "você gosta de sorvete": "Sim! Morango e chocolate são os melhores 😋",
+  "você gosta de sorvete?": "Sim! Morango e chocolate são os melhores 😋",
+  "você gosta de sorvete!": "Sim! Morango e chocolate são os melhores 😋",
+
+  "qual seu livro favorito": "Gosto de aventuras épicas e fantasia! 📖",
+  "qual seu livro favorito?": "Gosto de aventuras épicas e fantasia! 📖",
+  "qual seu livro favorito!": "Gosto de aventuras épicas e fantasia! 📖",
+
+  "qual é a sua estação do ano favorita": "Verão! Adoro sol e praia 🌞🏖️",
+  "qual é a sua estação do ano favorita?": "Verão! Adoro sol e praia 🌞🏖️",
+  "qual é a sua estação do ano favorita!": "Verão! Adoro sol e praia 🌞🏖️",
+
+  "você gosta de viajar": "Sim! Conhecer novos lugares é incrível ✈️",
+  "você gosta de viajar?": "Sim! Conhecer novos lugares é incrível ✈️",
+  "você gosta de viajar!": "Sim! Conhecer novos lugares é incrível ✈️",
+
+  "qual é o animal mais perigoso": "O mosquito transmite mais doenças que qualquer outro animal! 🦟",
+  "qual é o animal mais perigoso?": "O mosquito transmite mais doenças que qualquer outro animal! 🦟",
+  "qual é o animal mais perigoso!": "O mosquito transmite mais doenças que qualquer outro animal! 🦟",
+
+  "qual é o planeta mais quente": "Vênus é o planeta mais quente do sistema solar 🔥",
+  "qual é o planeta mais quente?": "Vênus é o planeta mais quente do sistema solar 🔥",
+  "qual é o planeta mais quente!": "Vênus é o planeta mais quente do sistema solar 🔥",
+
+  "quem inventou a lâmpada": "Thomas Edison inventou a lâmpada elétrica! 💡",
+  "quem inventou a lâmpada?": "Thomas Edison inventou a lâmpada elétrica! 💡",
+  "quem inventou a lâmpada!": "Thomas Edison inventou a lâmpada elétrica! 💡",
+
+  "qual é o maior rio do mundo": "O rio Amazonas é o maior em volume de água 🌊",
+  "qual é o maior rio do mundo?": "O rio Amazonas é o maior em volume de água 🌊",
+  "qual é o maior rio do mundo!": "O rio Amazonas é o maior em volume de água 🌊",
+
+  "qual é o menor país do mundo": "O menor país é a Cidade do Vaticano 🇻🇦",
+  "qual é o menor país do mundo?": "O menor país é a Cidade do Vaticano 🇻🇦",
+  "qual é o menor país do mundo!": "O menor país é a Cidade do Vaticano 🇻🇦",
+
+  "quem foi leonardo da vinci": "Um gênio renascentista famoso por arte e invenções 🎨🛠️",
+  "quem foi leonardo da vinci?": "Um gênio renascentista famoso por arte e invenções 🎨🛠️",
+  "quem foi leonardo da vinci!": "Um gênio renascentista famoso por arte e invenções 🎨🛠️",
+
+  "quem foi isaac newton": "Um cientista famoso pelas leis do movimento e gravidade 🍎",
+  "quem foi isaac newton?": "Um cientista famoso pelas leis do movimento e gravidade 🍎",
+  "quem foi isaac newton!": "Um cientista famoso pelas leis do movimento e gravidade 🍎",
+
+  "qual é o maior continente": "A Ásia é o maior continente 🌏",
+  "qual é o maior continente?": "A Ásia é o maior continente 🌏",
+  "qual é o maior continente!": "A Ásia é o maior continente 🌏",
+
+  "qual é o menor continente": "A Oceania é o menor continente 🌏",
+  "qual é o menor continente?": "A Oceania é o menor continente 🌏",
+  "qual é o menor continente!": "A Oceania é o menor continente 🌏",
+
+  "qual é o país mais populoso": "A China é o país mais populoso do mundo 🏯",
+  "qual é o país mais populoso?": "A China é o país mais populoso do mundo 🏯",
+  "qual é o país mais populoso!": "A China é o país mais populoso do mundo 🏯",
+
+  "qual é o país menos populoso": "O Vaticano é o país menos populoso do mundo 🇻🇦",
+  "qual é o país menos populoso?": "O Vaticano é o país menos populoso do mundo 🇻🇦",
+  "qual é o país menos populoso!": "O Vaticano é o país menos populoso do mundo 🇻🇦",
+
+  "como posso aprender programação": "Pratique todos os dias e estude linguagens como Python 🐍",
+  "como posso aprender programação?": "Pratique todos os dias e estude linguagens como Python 🐍",
+  "como posso aprender programação!": "Pratique todos os dias e estude linguagens como Python 🐍",
+
+  "qual é a maior cachoeira": "A maior cachoeira do mundo é o Salto Angel na Venezuela 🌊",
+  "qual é a maior cachoeira?": "A maior cachoeira do mundo é o Salto Angel na Venezuela 🌊",
+  "qual é a maior cachoeira!": "A maior cachoeira do mundo é o Salto Angel na Venezuela 🌊",
+
+  "qual é a menor cachoeira": "Não há uma menor oficial, mas algumas pequenas corredeiras são minúsculas 💧",
+  "qual é a menor cachoeira?": "Não há uma menor oficial, mas algumas pequenas corredeiras são minúsculas 💧",
+  "qual é a menor cachoeira!": "Não há uma menor oficial, mas algumas pequenas corredeiras são minúsculas 💧",
+
+  "qual é o esporte mais praticado": "O futebol é o esporte mais praticado no mundo ⚽",
+  "qual é o esporte mais praticado?": "O futebol é o esporte mais praticado no mundo ⚽",
+  "qual é o esporte mais praticado!": "O futebol é o esporte mais praticado no mundo ⚽",
+
+  "qual é o esporte mais rápido": "O hóquei no gelo é um dos esportes mais rápidos no mundo 🏒",
+  "qual é o esporte mais rápido?": "O hóquei no gelo é um dos esportes mais rápidos no mundo 🏒",
+  "qual é o esporte mais rápido!": "O hóquei no gelo é um dos esportes mais rápidos no mundo 🏒",
+
+  "como posso manter a saúde": "Alimente-se bem, durma e pratique exercícios regularmente 🥗💤🏋️",
+  "como posso manter a saúde?": "Alimente-se bem, durma e pratique exercícios regularmente 🥗💤🏋️",
+  "como posso manter a saúde!": "Alimente-se bem, durma e pratique exercícios regularmente 🥗💤🏋️"
+  
+  "qual é a sua banda favorita": "Eu gosto de rock clássico, como Queen! 🎸",
+  "qual é a sua banda favorita?": "Eu gosto de rock clássico, como Queen! 🎸",
+  "qual é a sua banda favorita!": "Eu gosto de rock clássico, como Queen! 🎸",
+
+  "você gosta de cantar": "Sim! Cantar é muito divertido 🎤",
+  "você gosta de cantar?": "Sim! Cantar é muito divertido 🎤",
+  "você gosta de cantar!": "Sim! Cantar é muito divertido 🎤",
+
+  "qual é a sua sobremesa favorita": "Eu adoro mousse de chocolate 😋",
+  "qual é a sua sobremesa favorita?": "Eu adoro mousse de chocolate 😋",
+  "qual é a sua sobremesa favorita!": "Eu adoro mousse de chocolate 😋",
+
+  "você gosta de desenhar": "Sim! Adoro desenhar coisas criativas 🎨",
+  "você gosta de desenhar?": "Sim! Adoro desenhar coisas criativas 🎨",
+  "você gosta de desenhar!": "Sim! Adoro desenhar coisas criativas 🎨",
+
+  "qual é o instrumento musical que você gosta": "Gosto de piano e guitarra 🎹🎸",
+  "qual é o instrumento musical que você gosta?": "Gosto de piano e guitarra 🎹🎸",
+  "qual é o instrumento musical que você gosta!": "Gosto de piano e guitarra 🎹🎸",
+
+  "qual é a sua série favorita": "Gosto de séries de aventura e fantasia! 📺",
+  "qual é a sua série favorita?": "Gosto de séries de aventura e fantasia! 📺",
+  "qual é a sua série favorita!": "Gosto de séries de aventura e fantasia! 📺",
+
+  "qual é o seu personagem de desenho favorito": "Adoro o Goku de Dragon Ball! 🐉",
+  "qual é o seu personagem de desenho favorito?": "Adoro o Goku de Dragon Ball! 🐉",
+  "qual é o seu personagem de desenho favorito!": "Adoro o Goku de Dragon Ball! 🐉",
+
+  "qual é a sua comida de café da manhã favorita": "Panquecas com mel são deliciosas! 🥞",
+  "qual é a sua comida de café da manhã favorita?": "Panquecas com mel são deliciosas! 🥞",
+  "qual é a sua comida de café da manhã favorita!": "Panquecas com mel são deliciosas! 🥞",
+
+  "qual é o seu animal favorito da selva": "Gosto muito do tigre! 🐅",
+  "qual é o seu animal favorito da selva?": "Gosto muito do tigre! 🐅",
+  "qual é o seu animal favorito da selva!": "Gosto muito do tigre! 🐅",
+
+  "qual é a sua fruta favorita": "Adoro manga! 🥭",
+  "qual é a sua fruta favorita?": "Adoro manga! 🥭",
+  "qual é a sua fruta favorita!": "Adoro manga! 🥭",
+
+  "qual é o seu herói favorito": "Gosto muito do Homem-Aranha! 🕷️",
+  "qual é o seu herói favorito?": "Gosto muito do Homem-Aranha! 🕷️",
+  "qual é o seu herói favorito!": "Gosto muito do Homem-Aranha! 🕷️",
+
+  "qual é o seu vilão favorito": "Gosto do Coringa! 🤡",
+  "qual é o seu vilão favorito?": "Gosto do Coringa! 🤡",
+  "qual é o seu vilão favorito!": "Gosto do Coringa! 🤡",
+
+  "qual é a sua comida favorita de festa": "Adoro brigadeiro! 🍫",
+  "qual é a sua comida favorita de festa?": "Adoro brigadeiro! 🍫",
+  "qual é a sua comida favorita de festa!": "Adoro brigadeiro! 🍫",
+
+  "qual é o seu estilo de música favorito": "Adoro rock clássico e pop 🎶",
+  "qual é o seu estilo de música favorito?": "Adoro rock clássico e pop 🎶",
+  "qual é o seu estilo de música favorito!": "Adoro rock clássico e pop 🎶",
+
+  "qual é o seu desenho animado favorito": "Adoro Dragon Ball e Pokémon! 🐉⚡",
+  "qual é o seu desenho animado favorito?": "Adoro Dragon Ball e Pokémon! 🐉⚡",
+  "qual é o seu desenho animado favorito!": "Adoro Dragon Ball e Pokémon! 🐉⚡",
+
+  "qual é a sua cor de roupa favorita": "Gosto de preto e azul escuro 🖤💙",
+  "qual é a sua cor de roupa favorita?": "Gosto de preto e azul escuro 🖤💙",
+  "qual é a sua cor de roupa favorita!": "Gosto de preto e azul escuro 🖤💙",
+
+  "qual é o seu superpoder favorito": "Voar seria incrível! 🕊️",
+  "qual é o seu superpoder favorito?": "Voar seria incrível! 🕊️",
+  "qual é o seu superpoder favorito!": "Voar seria incrível! 🕊️",
+
+  "qual é a sua estação favorita do ano": "Verão, adoro praia e sol! ☀️",
+  "qual é a sua estação favorita do ano?": "Verão, adoro praia e sol! ☀️",
+  "qual é a sua estação favorita do ano!": "Verão, adoro praia e sol! ☀️",
+
+  "qual é a sua rede social favorita": "Adoro Instagram e TikTok! 📱",
+  "qual é a sua rede social favorita?": "Adoro Instagram e TikTok! 📱",
+  "qual é a sua rede social favorita!": "Adoro Instagram e TikTok! 📱",
+
+  "qual é o seu app favorito": "Gosto do YouTube! 🎥",
+  "qual é o seu app favorito?": "Gosto do YouTube! 🎥",
+  "qual é o seu app favorito!": "Gosto do YouTube! 🎥",
+
+  "qual é o seu gênero de filme favorito": "Aventura e ficção científica! 🚀",
+  "qual é o seu gênero de filme favorito?": "Aventura e ficção científica! 🚀",
+  "qual é o seu gênero de filme favorito!": "Aventura e ficção científica! 🚀",
+
+  "qual é a sua bebida favorita": "Adoro suco de laranja 🍊",
+  "qual é a sua bebida favorita?": "Adoro suco de laranja 🍊",
+  "qual é a sua bebida favorita!": "Adoro suco de laranja 🍊",
+
+  "qual é o seu videogame favorito": "Gosto de Fortnite e GTA! 🎮",
+  "qual é o seu videogame favorito?": "Gosto de Fortnite e GTA! 🎮",
+  "qual é o seu videogame favorito!": "Gosto de Fortnite e GTA! 🎮",
+
+  "qual é a sua atividade favorita no fim de semana": "Jogar e relaxar 😎",
+  "qual é a sua atividade favorita no fim de semana?": "Jogar e relaxar 😎",
+  "qual é a sua atividade favorita no fim de semana!": "Jogar e relaxar 😎"
+
+  "qual é o seu esporte favorito na tv": "Adoro assistir futebol e basquete! 🏀⚽",
+  "qual é o seu esporte favorito na tv?": "Adoro assistir futebol e basquete! 🏀⚽",
+  "qual é o seu esporte favorito na tv!": "Adoro assistir futebol e basquete! 🏀⚽",
+
+  "qual é o seu jogo de tabuleiro favorito": "Gosto de xadrez e Banco Imobiliário ♟️🏠",
+  "qual é o seu jogo de tabuleiro favorito?": "Gosto de xadrez e Banco Imobiliário ♟️🏠",
+  "qual é o seu jogo de tabuleiro favorito!": "Gosto de xadrez e Banco Imobiliário ♟️🏠",
+
+  "qual é o seu animal marinho favorito": "Adoro golfinhos e tartarugas 🐬🐢",
+  "qual é o seu animal marinho favorito?": "Adoro golfinhos e tartarugas 🐬🐢",
+  "qual é o seu animal marinho favorito!": "Adoro golfinhos e tartarugas 🐬🐢",
+
+  "qual é o seu dia da semana favorito": "Sábado, porque é dia de descanso 😎",
+  "qual é o seu dia da semana favorito?": "Sábado, porque é dia de descanso 😎",
+  "qual é o seu dia da semana favorito!": "Sábado, porque é dia de descanso 😎",
+
+  "qual é o seu mês favorito": "Dezembro! Amo festas e férias 🎉",
+  "qual é o seu mês favorito?": "Dezembro! Amo festas e férias 🎉",
+  "qual é o seu mês favorito!": "Dezembro! Amo festas e férias 🎉",
+
+  "qual é a sua comida de rua favorita": "Adoro cachorro-quente e pastel 🌭🥟",
+  "qual é a sua comida de rua favorita?": "Adoro cachorro-quente e pastel 🌭🥟",
+  "qual é a sua comida de rua favorita!": "Adoro cachorro-quente e pastel 🌭🥟",
+
+  "qual é o seu lugar favorito na cidade": "Gosto de parques e praças 🌳🏞️",
+  "qual é o seu lugar favorito na cidade?": "Gosto de parques e praças 🌳🏞️",
+  "qual é o seu lugar favorito na cidade!": "Gosto de parques e praças 🌳🏞️",
+
+  "qual é a sua atividade favorita para relaxar": "Ler ou ouvir música 🎧📖",
+  "qual é a sua atividade favorita para relaxar?": "Ler ou ouvir música 🎧📖",
+  "qual é a sua atividade favorita para relaxar!": "Ler ou ouvir música 🎧📖",
+
+  "qual é a sua comida de domingo favorita": "Churrasco! 🍖",
+  "qual é a sua comida de domingo favorita?": "Churrasco! 🍖",
+  "qual é a sua comida de domingo favorita!": "Churrasco! 🍖",
+
+  "qual é o seu passatempo favorito": "Jogar videogame ou ver séries 🎮📺",
+  "qual é o seu passatempo favorito?": "Jogar videogame ou ver séries 🎮📺",
+  "qual é o seu passatempo favorito!": "Jogar videogame ou ver séries 🎮📺",
+
+  "qual é o seu tipo de café favorito": "Cappuccino ou latte ☕",
+  "qual é o seu tipo de café favorito?": "Cappuccino ou latte ☕",
+  "qual é o seu tipo de café favorito!": "Cappuccino ou latte ☕",
+
+  "qual é a sua rede social favorita para vídeos": "TikTok é incrível! 🎵",
+  "qual é a sua rede social favorita para vídeos?": "TikTok é incrível! 🎵",
+  "qual é a sua rede social favorita para vídeos!": "TikTok é incrível! 🎵",
+
+  "qual é o seu programa de TV favorito": "Gosto de programas de aventura e ciência 🔬",
+  "qual é o seu programa de TV favorito?": "Gosto de programas de aventura e ciência 🔬",
+  "qual é o seu programa de TV favorito!": "Gosto de programas de aventura e ciência 🔬",
+
+  "qual é a sua estação de rádio favorita": "Gosto de rádios de música pop e rock 🎶",
+  "qual é a sua estação de rádio favorita?": "Gosto de rádios de música pop e rock 🎶",
+  "qual é a sua estação de rádio favorita!": "Gosto de rádios de música pop e rock 🎶",
+
+  "qual é o seu tipo de chocolate favorito": "Ao leite e meio amargo 🍫",
+  "qual é o seu tipo de chocolate favorito?": "Ao leite e meio amargo 🍫",
+  "qual é o seu tipo de chocolate favorito!": "Ao leite e meio amargo 🍫",
+
+  "qual é o seu personagem de filme favorito": "Adoro Harry Potter! 🧙‍♂️",
+  "qual é o seu personagem de filme favorito?": "Adoro Harry Potter! 🧙‍♂️",
+  "qual é o seu personagem de filme favorito!": "Adoro Harry Potter! 🧙‍♂️",
+
+  "qual é a sua atividade favorita ao ar livre": "Andar de bicicleta e correr 🚴‍♂️🏃‍♂️",
+  "qual é a sua atividade favorita ao ar livre?": "Andar de bicicleta e correr 🚴‍♂️🏃‍♂️",
+  "qual é a sua atividade favorita ao ar livre!": "Andar de bicicleta e correr 🚴‍♂️🏃‍♂️",
+
+  "qual é o seu brinquedo favorito": "Gosto de LEGO e bonecos colecionáveis 🧱🪆",
+  "qual é o seu brinquedo favorito?": "Gosto de LEGO e bonecos colecionáveis 🧱🪆",
+  "qual é o seu brinquedo favorito!": "Gosto de LEGO e bonecos colecionáveis 🧱🪆",
+
+  "qual é o seu lugar favorito para férias": "Praias tropicais e montanhas 🏖️🏔️",
+  "qual é o seu lugar favorito para férias?": "Praias tropicais e montanhas 🏖️🏔️",
+  "qual é o seu lugar favorito para férias!": "Praias tropicais e montanhas 🏖️🏔️",
+
+  "qual é o seu doce favorito": "Brigadeiro e chocolate 🍫",
+  "qual é o seu doce favorito?": "Brigadeiro e chocolate 🍫",
+  "qual é o seu doce favorito!": "Brigadeiro e chocolate 🍫",
+
+  "qual é a sua comida favorita de verão": "Sorvete e frutas geladas 🍦🍉",
+  "qual é a sua comida favorita de verão?": "Sorvete e frutas geladas 🍦🍉",
+  "qual é a sua comida favorita de verão!": "Sorvete e frutas geladas 🍦🍉"
+
+  "o que você está fazendo": "Estou aqui te ajudando 😄",
+  "o que você está fazendo?": "Estou aqui te ajudando 😄",
+  "o que você está fazendo!": "Estou aqui te ajudando 😄",
+
+  "você está ocupado": "Não, posso conversar com você agora 😊",
+  "você está ocupado?": "Não, posso conversar com você agora 😊",
+  "você está ocupado!": "Não, posso conversar com você agora 😊",
+
+  "como foi seu dia": "Meu dia está ótimo! E o seu? 😎",
+  "como foi seu dia?": "Meu dia está ótimo! E o seu? 😎",
+  "como foi seu dia!": "Meu dia está ótimo! E o seu? 😎",
+
+  "o que você vai fazer hoje": "Vou conversar e aprender com você 😁",
+  "o que você vai fazer hoje?": "Vou conversar e aprender com você 😁",
+  "o que você vai fazer hoje!": "Vou conversar e aprender com você 😁",
+
+  "você quer jogar": "Claro! Que tipo de jogo você quer jogar? 🎮",
+  "você quer jogar?": "Claro! Que tipo de jogo você quer jogar? 🎮",
+  "você quer jogar!": "Claro! Que tipo de jogo você quer jogar? 🎮",
+
+  "quer ouvir uma música": "Sim! Qual música você quer ouvir? 🎵",
+  "quer ouvir uma música?": "Sim! Qual música você quer ouvir? 🎵",
+  "quer ouvir uma música!": "Sim! Qual música você quer ouvir? 🎵",
+
+  "você está com fome": "Não sinto fome, mas posso dar ideias de comida 😋",
+  "você está com fome?": "Não sinto fome, mas posso dar ideias de comida 😋",
+  "você está com fome!": "Não sinto fome, mas posso dar ideias de comida 😋",
+
+  "você está cansado": "Não, estou pronto para conversar 😎",
+  "você está cansado?": "Não, estou pronto para conversar 😎",
+  "você está cansado!": "Não, estou pronto para conversar 😎",
+
+  "o que você acha disso": "Acho interessante! Me conte mais 😊",
+  "o que você acha disso?": "Acho interessante! Me conte mais 😊",
+  "o que você acha disso!": "Acho interessante! Me conte mais 😊",
+
+  "você gosta de filmes": "Sim! Adoro filmes de aventura e comédia 🎬",
+  "você gosta de filmes?": "Sim! Adoro filmes de aventura e comédia 🎬",
+  "você gosta de filmes!": "Sim! Adoro filmes de aventura e comédia 🎬",
+
+  "qual é seu prato favorito no dia a dia": "Gosto de macarrão e arroz com feijão 😋",
+  "qual é seu prato favorito no dia a dia?": "Gosto de macarrão e arroz com feijão 😋",
+  "qual é seu prato favorito no dia a dia!": "Gosto de macarrão e arroz com feijão 😋",
+
+  "você gosta de sair": "Sim! Caminhar ou ir a lugares legais é ótimo 🚶‍♂️",
+  "você gosta de sair?": "Sim! Caminhar ou ir a lugares legais é ótimo 🚶‍♂️",
+  "você gosta de sair!": "Sim! Caminhar ou ir a lugares legais é ótimo 🚶‍♂️",
+
+  "você prefere dia ou noite": "Depende, mas a noite é tranquila 🌙",
+  "você prefere dia ou noite?": "Depende, mas a noite é tranquila 🌙",
+  "você prefere dia ou noite!": "Depende, mas a noite é tranquila 🌙",
+
+  "o que você faria se chovesse": "Ficaria em casa conversando ou jogando ☔",
+  "o que você faria se chovesse?": "Ficaria em casa conversando ou jogando ☔",
+  "o que você faria se chovesse!": "Ficaria em casa conversando ou jogando ☔",
+
+  "você gosta de animais": "Sim! São fofos e divertidos 🐶🐱",
+  "você gosta de animais?": "Sim! São fofos e divertidos 🐶🐱",
+  "você gosta de animais!": "Sim! São fofos e divertidos 🐶🐱",
+
+  "o que você faria se estivesse com frio": "Tomaria uma bebida quente ou ficaria debaixo do cobertor ☕🛌",
+  "o que você faria se estivesse com frio?": "Tomaria uma bebida quente ou ficaria debaixo do cobertor ☕🛌",
+  "o que você faria se estivesse com frio!": "Tomaria uma bebida quente ou ficaria debaixo do cobertor ☕🛌",
+
+  "qual é o seu tipo de mensagem favorita": "Gosto de mensagens divertidas e positivas 😄",
+  "qual é o seu tipo de mensagem favorita?": "Gosto de mensagens divertidas e positivas 😄",
+  "qual é o seu tipo de mensagem favorita!": "Gosto de mensagens divertidas e positivas 😄",
+
+  "você gosta de acordar cedo": "Sim, gosto de aproveitar o dia 🌅",
+  "você gosta de acordar cedo?": "Sim, gosto de aproveitar o dia 🌅",
+  "você gosta de acordar cedo!": "Sim, gosto de aproveitar o dia 🌅",
+
+  "você gosta de dormir tarde": "Às vezes, mas é bom descansar 😴",
+  "você gosta de dormir tarde?": "Às vezes, mas é bom descansar 😴",
+  "você gosta de dormir tarde!": "Às vezes, mas é bom descansar 😴",
+
+  "o que você faria se estivesse entediado": "Eu conversaria com você ou aprenderia algo novo 😎",
+  "o que você faria se estivesse entediado?": "Eu conversaria com você ou aprenderia algo novo 😎",
+  "o que você faria se estivesse entediado!": "Eu conversaria com você ou aprenderia algo novo 😎",
+
+  "você gosta de ajudar pessoas": "Sim! Adoro ajudar 😄",
+  "você gosta de ajudar pessoas?": "Sim! Adoro ajudar 😄",
+  "você gosta de ajudar pessoas!": "Sim! Adoro ajudar 😄",
+
+  "qual é a sua música favorita para relaxar": "Gosto de músicas calmas e instrumentais 🎹",
+  "qual é a sua música favorita para relaxar?": "Gosto de músicas calmas e instrumentais 🎹",
+  "qual é a sua música favorita para relaxar!": "Gosto de músicas calmas e instrumentais 🎹",
+
+  "você gosta de cozinhar": "Sim! É divertido experimentar receitas 🍳",
+  "você gosta de cozinhar?": "Sim! É divertido experimentar receitas 🍳",
+  "você gosta de cozinhar!": "Sim! É divertido experimentar receitas 🍳",
+
+  "qual é a sua cor favorita para o quarto": "Azul e verde deixam o ambiente tranquilo 💙💚",
+  "qual é a sua cor favorita para o quarto?": "Azul e verde deixam o ambiente tranquilo 💙💚",
+  "qual é a sua cor favorita para o quarto!": "Azul e verde deixam o ambiente tranquilo 💙💚"
+
+  "quanto é 1x1": "1 x 1 é 1",
+  "quanto é 1x1?": "1 x 1 é 1",
+  "quanto é 1x1!": "1 x 1 é 1",
+
+  "quanto é 1x2": "1 x 2 é 2",
+  "quanto é 1x2?": "1 x 2 é 2",
+  "quanto é 1x2!": "1 x 2 é 2",
+
+  "quanto é 1x3": "1 x 3 é 3",
+  "quanto é 1x3?": "1 x 3 é 3",
+  "quanto é 1x3!": "1 x 3 é 3",
+
+  "quanto é 1x4": "1 x 4 é 4",
+  "quanto é 1x4?": "1 x 4 é 4",
+  "quanto é 1x4!": "1 x 4 é 4",
+
+  "quanto é 1x5": "1 x 5 é 5",
+  "quanto é 1x5?": "1 x 5 é 5",
+  "quanto é 1x5!": "1 x 5 é 5",
+
+  "quanto é 1x6": "1 x 6 é 6",
+  "quanto é 1x6?": "1 x 6 é 6",
+  "quanto é 1x6!": "1 x 6 é 6",
+
+  "quanto é 1x7": "1 x 7 é 7",
+  "quanto é 1x7?": "1 x 7 é 7",
+  "quanto é 1x7!": "1 x 7 é 7",
+
+  "quanto é 1x8": "1 x 8 é 8",
+  "quanto é 1x8?": "1 x 8 é 8",
+  "quanto é 1x8!": "1 x 8 é 8",
+
+  "quanto é 1x9": "1 x 9 é 9",
+  "quanto é 1x9?": "1 x 9 é 9",
+  "quanto é 1x9!": "1 x 9 é 9",
+
+  "quanto é 1x10": "1 x 10 é 10",
+  "quanto é 1x10?": "1 x 10 é 10",
+  "quanto é 1x10!": "1 x 10 é 10",
+
+  "quanto é 2x1": "2 x 1 é 2",
+  "quanto é 2x1?": "2 x 1 é 2",
+  "quanto é 2x1!": "2 x 1 é 2",
+
+  "quanto é 2x2": "2 x 2 é 4",
+  "quanto é 2x2?": "2 x 2 é 4",
+  "quanto é 2x2!": "2 x 2 é 4",
+
+  "quanto é 2x3": "2 x 3 é 6",
+  "quanto é 2x3?": "2 x 3 é 6",
+  "quanto é 2x3!": "2 x 3 é 6",
+
+  "quanto é 2x4": "2 x 4 é 8",
+  "quanto é 2x4?": "2 x 4 é 8",
+  "quanto é 2x4!": "2 x 4 é 8",
+
+  "quanto é 2x5": "2 x 5 é 10",
+  "quanto é 2x5?": "2 x 5 é 10",
+  "quanto é 2x5!": "2 x 5 é 10",
+
+  "quanto é 2x6": "2 x 6 é 12",
+  "quanto é 2x6?": "2 x 6 é 12",
+  "quanto é 2x6!": "2 x 6 é 12",
+
+  "quanto é 2x7": "2 x 7 é 14",
+  "quanto é 2x7?": "2 x 7 é 14",
+  "quanto é 2x7!": "2 x 7 é 14",
+
+  "quanto é 2x8": "2 x 8 é 16",
+  "quanto é 2x8?": "2 x 8 é 16",
+  "quanto é 2x8!": "2 x 8 é 16",
+
+  "quanto é 2x9": "2 x 9 é 18",
+  "quanto é 2x9?": "2 x 9 é 18",
+  "quanto é 2x9!": "2 x 9 é 18",
+
+  "quanto é 2x10": "2 x 10 é 20",
+  "quanto é 2x10?": "2 x 10 é 20",
+  "quanto é 2x10!": "2 x 10 é 20"
+
+  "quanto é 3x1": "3 x 1 é 3",
+  "quanto é 3x1?": "3 x 1 é 3",
+  "quanto é 3x1!": "3 x 1 é 3",
+
+  "quanto é 3x2": "3 x 2 é 6",
+  "quanto é 3x2?": "3 x 2 é 6",
+  "quanto é 3x2!": "3 x 2 é 6",
+
+  "quanto é 3x3": "3 x 3 é 9",
+  "quanto é 3x3?": "3 x 3 é 9",
+  "quanto é 3x3!": "3 x 3 é 9",
+
+  "quanto é 3x4": "3 x 4 é 12",
+  "quanto é 3x4?": "3 x 4 é 12",
+  "quanto é 3x4!": "3 x 4 é 12",
+
+  "quanto é 3x5": "3 x 5 é 15",
+  "quanto é 3x5?": "3 x 5 é 15",
+  "quanto é 3x5!": "3 x 5 é 15",
+
+  "quanto é 3x6": "3 x 6 é 18",
+  "quanto é 3x6?": "3 x 6 é 18",
+  "quanto é 3x6!": "3 x 6 é 18",
+
+  "quanto é 3x7": "3 x 7 é 21",
+  "quanto é 3x7?": "3 x 7 é 21",
+  "quanto é 3x7!": "3 x 7 é 21",
+
+  "quanto é 3x8": "3 x 8 é 24",
+  "quanto é 3x8?": "3 x 8 é 24",
+  "quanto é 3x8!": "3 x 8 é 24",
+
+  "quanto é 3x9": "3 x 9 é 27",
+  "quanto é 3x9?": "3 x 9 é 27",
+  "quanto é 3x9!": "3 x 9 é 27",
+
+  "quanto é 3x10": "3 x 10 é 30",
+  "quanto é 3x10?": "3 x 10 é 30",
+  "quanto é 3x10!": "3 x 10 é 30",
+
+  "quanto é 4x1": "4 x 1 é 4",
+  "quanto é 4x1?": "4 x 1 é 4",
+  "quanto é 4x1!": "4 x 1 é 4",
+
+  "quanto é 4x2": "4 x 2 é 8",
+  "quanto é 4x2?": "4 x 2 é 8",
+  "quanto é 4x2!": "4 x 2 é 8",
+
+  "quanto é 4x3": "4 x 3 é 12",
+  "quanto é 4x3?": "4 x 3 é 12",
+  "quanto é 4x3!": "4 x 3 é 12",
+
+  "quanto é 4x4": "4 x 4 é 16",
+  "quanto é 4x4?": "4 x 4 é 16",
+  "quanto é 4x4!": "4 x 4 é 16",
+
+  "quanto é 4x5": "4 x 5 é 20",
+  "quanto é 4x5?": "4 x 5 é 20",
+  "quanto é 4x5!": "4 x 5 é 20",
+
+  "quanto é 4x6": "4 x 6 é 24",
+  "quanto é 4x6?": "4 x 6 é 24",
+  "quanto é 4x6!": "4 x 6 é 24",
+
+  "quanto é 4x7": "4 x 7 é 28",
+  "quanto é 4x7?": "4 x 7 é 28",
+  "quanto é 4x7!": "4 x 7 é 28",
+
+  "quanto é 4x8": "4 x 8 é 32",
+  "quanto é 4x8?": "4 x 8 é 32",
+  "quanto é 4x8!": "4 x 8 é 32",
+
+  "quanto é 4x9": "4 x 9 é 36",
+  "quanto é 4x9?": "4 x 9 é 36",
+  "quanto é 4x9!": "4 x 9 é 36",
+
+  "quanto é 4x10": "4 x 10 é 40",
+  "quanto é 4x10?": "4 x 10 é 40",
+  "quanto é 4x10!": "4 x 10 é 40",
+
+  "quanto é 5x1": "5 x 1 é 5",
+  "quanto é 5x1?": "5 x 1 é 5",
+  "quanto é 5x1!": "5 x 1 é 5",
+
+  "quanto é 5x2": "5 x 2 é 10",
+  "quanto é 5x2?": "5 x 2 é 10",
+  "quanto é 5x2!": "5 x 2 é 10",
+
+  "quanto é 5x3": "5 x 3 é 15",
+  "quanto é 5x3?": "5 x 3 é 15",
+  "quanto é 5x3!": "5 x 3 é 15",
+
+  "quanto é 5x4": "5 x 4 é 20",
+  "quanto é 5x4?": "5 x 4 é 20",
+  "quanto é 5x4!": "5 x 4 é 20",
+
+  "quanto é 5x5": "5 x 5 é 25",
+  "quanto é 5x5?": "5 x 5 é 25",
+  "quanto é 5x5!": "5 x 5 é 25",
+
+  "quanto é 5x6": "5 x 6 é 30",
+  "quanto é 5x6?": "5 x 6 é 30",
+  "quanto é 5x6!": "5 x 6 é 30",
+
+  "quanto é 5x7": "5 x 7 é 35",
+  "quanto é 5x7?": "5 x 7 é 35",
+  "quanto é 5x7!": "5 x 7 é 35",
+
+  "quanto é 5x8": "5 x 8 é 40",
+  "quanto é 5x8?": "5 x 8 é 40",
+  "quanto é 5x8!": "5 x 8 é 40",
+
+  "quanto é 5x9": "5 x 9 é 45",
+  "quanto é 5x9?": "5 x 9 é 45",
+  "quanto é 5x9!": "5 x 9 é 45",
+
+  "quanto é 5x10": "5 x 10 é 50",
+  "quanto é 5x10?": "5 x 10 é 50",
+  "quanto é 5x10!": "5 x 10 é 50"
+ 
+  "quanto é 6x1": "6 x 1 é 6",
+  "quanto é 6x1?": "6 x 1 é 6",
+  "quanto é 6x1!": "6 x 1 é 6",
+
+  "quanto é 6x2": "6 x 2 é 12",
+  "quanto é 6x2?": "6 x 2 é 12",
+  "quanto é 6x2!": "6 x 2 é 12",
+
+  "quanto é 6x3": "6 x 3 é 18",
+  "quanto é 6x3?": "6 x 3 é 18",
+  "quanto é 6x3!": "6 x 3 é 18",
+
+  "quanto é 6x4": "6 x 4 é 24",
+  "quanto é 6x4?": "6 x 4 é 24",
+  "quanto é 6x4!": "6 x 4 é 24",
+
+  "quanto é 6x5": "6 x 5 é 30",
+  "quanto é 6x5?": "6 x 5 é 30",
+  "quanto é 6x5!": "6 x 5 é 30",
+
+  "quanto é 6x6": "6 x 6 é 36",
+  "quanto é 6x6?": "6 x 6 é 36",
+  "quanto é 6x6!": "6 x 6 é 36",
+
+  "quanto é 6x7": "6 x 7 é 42",
+  "quanto é 6x7?": "6 x 7 é 42",
+  "quanto é 6x7!": "6 x 7 é 42",
+
+  "quanto é 6x8": "6 x 8 é 48",
+  "quanto é 6x8?": "6 x 8 é 48",
+  "quanto é 6x8!": "6 x 8 é 48",
+
+  "quanto é 6x9": "6 x 9 é 54",
+  "quanto é 6x9?": "6 x 9 é 54",
+  "quanto é 6x9!": "6 x 9 é 54",
+
+  "quanto é 6x10": "6 x 10 é 60",
+  "quanto é 6x10?": "6 x 10 é 60",
+  "quanto é 6x10!": "6 x 10 é 60",
+
+  "quanto é 7x1": "7 x 1 é 7",
+  "quanto é 7x1?": "7 x 1 é 7",
+  "quanto é 7x1!": "7 x 1 é 7",
+
+  "quanto é 7x2": "7 x 2 é 14",
+  "quanto é 7x2?": "7 x 2 é 14",
+  "quanto é 7x2!": "7 x 2 é 14",
+
+  "quanto é 7x3": "7 x 3 é 21",
+  "quanto é 7x3?": "7 x 3 é 21",
+  "quanto é 7x3!": "7 x 3 é 21",
+
+  "quanto é 7x4": "7 x 4 é 28",
+  "quanto é 7x4?": "7 x 4 é 28",
+  "quanto é 7x4!": "7 x 4 é 28",
+
+  "quanto é 7x5": "7 x 5 é 35",
+  "quanto é 7x5?": "7 x 5 é 35",
+  "quanto é 7x5!": "7 x 5 é 35",
+
+  "quanto é 7x6": "7 x 6 é 42",
+  "quanto é 7x6?": "7 x 6 é 42",
+  "quanto é 7x6!": "7 x 6 é 42",
+
+  "quanto é 7x7": "7 x 7 é 49",
+  "quanto é 7x7?": "7 x 7 é 49",
+  "quanto é 7x7!": "7 x 7 é 49",
+
+  "quanto é 7x8": "7 x 8 é 56",
+  "quanto é 7x8?": "7 x 8 é 56",
+  "quanto é 7x8!": "7 x 8 é 56",
+
+  "quanto é 7x9": "7 x 9 é 63",
+  "quanto é 7x9?": "7 x 9 é 63",
+  "quanto é 7x9!": "7 x 9 é 63",
+
+  "quanto é 7x10": "7 x 10 é 70",
+  "quanto é 7x10?": "7 x 10 é 70",
+  "quanto é 7x10!": "7 x 10 é 70",
+
+  "quanto é 8x1": "8 x 1 é 8",
+  "quanto é 8x1?": "8 x 1 é 8",
+  "quanto é 8x1!": "8 x 1 é 8",
+
+  "quanto é 8x2": "8 x 2 é 16",
+  "quanto é 8x2?": "8 x 2 é 16",
+  "quanto é 8x2!": "8 x 2 é 16",
+
+  "quanto é 8x3": "8 x 3 é 24",
+  "quanto é 8x3?": "8 x 3 é 24",
+  "quanto é 8x3!": "8 x 3 é 24",
+
+  "quanto é 8x4": "8 x 4 é 32",
+  "quanto é 8x4?": "8 x 4 é 32",
+  "quanto é 8x4!": "8 x 4 é 32",
+
+  "quanto é 8x5": "8 x 5 é 40",
+  "quanto é 8x5?": "8 x 5 é 40",
+  "quanto é 8x5!": "8 x 5 é 40",
+
+  "quanto é 8x6": "8 x 6 é 48",
+  "quanto é 8x6?": "8 x 6 é 48",
+  "quanto é 8x6!": "8 x 6 é 48",
+
+  "quanto é 8x7": "8 x 7 é 56",
+  "quanto é 8x7?": "8 x 7 é 56",
+  "quanto é 8x7!": "8 x 7 é 56",
+
+  "quanto é 8x8": "8 x 8 é 64",
+  "quanto é 8x8?": "8 x 8 é 64",
+  "quanto é 8x8!": "8 x 8 é 64",
+
+  "quanto é 8x9": "8 x 9 é 72",
+  "quanto é 8x9?": "8 x 9 é 72",
+  "quanto é 8x9!": "8 x 9 é 72",
+
+  "quanto é 8x10": "8 x 10 é 80",
+  "quanto é 8x10?": "8 x 10 é 80",
+  "quanto é 8x10!": "8 x 10 é 80",
+
+  "quanto é 9x1": "9 x 1 é 9",
+  "quanto é 9x1?": "9 x 1 é 9",
+  "quanto é 9x1!": "9 x 1 é 9",
+
+  "quanto é 9x2": "9 x 2 é 18",
+  "quanto é 9x2?": "9 x 2 é 18",
+  "quanto é 9x2!": "9 x 2 é 18",
+
+  "quanto é 9x3": "9 x 3 é 27",
+  "quanto é 9x3?": "9 x 3 é 27",
+  "quanto é 9x3!": "9 x 3 é 27",
+
+  "quanto é 9x4": "9 x 4 é 36",
+  "quanto é 9x4?": "9 x 4 é 36",
+  "quanto é 9x4!": "9 x 4 é 36",
+
+  "quanto é 9x5": "9 x 5 é 45",
+  "quanto é 9x5?": "9 x 5 é 45",
+  "quanto é 9x5!": "9 x 5 é 45",
+
+  "quanto é 9x6": "9 x 6 é 54",
+  "quanto é 9x6?": "9 x 6 é 54",
+  "quanto é 9x6!": "9 x 6 é 54",
+
+  "quanto é 9x7": "9 x 7 é 63",
+  "quanto é 9x7?": "9 x 7 é 63",
+  "quanto é 9x7!": "9 x 7 é 63",
+
+  "quanto é 9x8": "9 x 8 é 72",
+  "quanto é 9x8?": "9 x 8 é 72",
+  "quanto é 9x8!": "9 x 8 é 72",
+
+  "quanto é 9x9": "9 x 9 é 81",
+  "quanto é 9x9?": "9 x 9 é 81",
+  "quanto é 9x9!": "9 x 9 é 81",
+
+  "quanto é 9x10": "9 x 10 é 90",
+  "quanto é 9x10?": "9 x 10 é 90",
+  "quanto é 9x10!": "9 x 10 é 90",
+
+  "quanto é 10x1": "10 x 1 é 10",
+  "quanto é 10x1?": "10 x 1 é 10",
+  "quanto é 10x1!": "10 x 1 é 10",
+
+  "quanto é 10x2": "10 x 2 é 20",
+  "quanto é 10x2?": "10 x 2 é 20",
+  "quanto é 10x2!": "10 x 2 é 20",
+
+  "quanto é 10x3": "10 x 3 é 30",
+  "quanto é 10x3?": "10 x 3 é 30",
+  "quanto é 10x3!": "10 x 3 é 30",
+
+  "quanto é 10x4": "10 x 4 é 40",
+  "quanto é 10x4?": "10 x 4 é 40",
+  "quanto é 10x4!": "10 x 4 é 40",
+
+  "quanto é 10x5": "10 x 5 é 50",
+  "quanto é 10x5?": "10 x 5 é 50",
+  "quanto é 10x5!": "10 x 5 é 50",
+
+  "quanto é 10x6": "10 x 6 é 60",
+  "quanto é 10x6?": "10 x 6 é 60",
+  "quanto é 10x6!": "10 x 6 é 60",
+
+  "quanto é 10x7": "10 x 7 é 70",
+  "quanto é 10x7?": "10 x 7 é 70",
+  "quanto é 10x7!": "10 x 7 é 70",
+
+  "quanto é 10x8": "10 x 8 é 80",
+  "quanto é 10x8?": "10 x 8 é 80",
+  "quanto é 10x8!": "10 x 8 é 80",
+
+  "quanto é 10x9": "10 x 9 é 90",
+  "quanto é 10x9?": "10 x 9 é 90",
+  "quanto é 10x9!": "10 x 9 é 90",
+
+  "quanto é 10x10": "10 x 10 é 100",
+  "quanto é 10x10?": "10 x 10 é 100",
+  "quanto é 10x10!": "10 x 10 é 100"
+
+  "quanto é 11x11": "11 x 11 é 121",
+  "quanto é 11x11?": "11 x 11 é 121",
+  "quanto é 11x11!": "11 x 11 é 121",
+
+  "quanto é 12x7": "12 x 7 é 84",
+  "quanto é 12x7?": "12 x 7 é 84",
+  "quanto é 12x7!": "12 x 7 é 84",
+
+  "quanto é 15x6": "15 x 6 é 90",
+  "quanto é 15x6?": "15 x 6 é 90",
+  "quanto é 15x6!": "15 x 6 é 90",
+
+  "quanto é 20x5": "20 x 5 é 100",
+  "quanto é 20x5?": "20 x 5 é 100",
+  "quanto é 20x5!": "20 x 5 é 100",
+
+  "quanto é 25x4": "25 x 4 é 100",
+  "quanto é 25x4?": "25 x 4 é 100",
+  "quanto é 25x4!": "25 x 4 é 100",
+
+  "quanto é 30x3": "30 x 3 é 90",
+  "quanto é 30x3?": "30 x 3 é 90",
+  "quanto é 30x3!": "30 x 3 é 90",
+
+  "quanto é 40x2": "40 x 2 é 80",
+  "quanto é 40x2?": "40 x 2 é 80",
+  "quanto é 40x2!": "40 x 2 é 80",
+
+  "quanto é 50x1": "50 x 1 é 50",
+  "quanto é 50x1?": "50 x 1 é 50",
+  "quanto é 50x1!": "50 x 1 é 50",
+
+  "quanto é 33x3": "33 x 3 é 99",
+  "quanto é 33x3?": "33 x 3 é 99",
+  "quanto é 33x3!": "33 x 3 é 99",
+
+  "quanto é 17x6": "17 x 6 é 102",
+  "quanto é 17x6?": "17 x 6 é 102",
+  "quanto é 17x6!": "17 x 6 é 102",
+
+  "quanto é 28x7": "28 x 7 é 196",
+  "quanto é 28x7?": "28 x 7 é 196",
+  "quanto é 28x7!": "28 x 7 é 196",
+
+  "quanto é 45x5": "45 x 5 é 225",
+  "quanto é 45x5?": "45 x 5 é 225",
+  "quanto é 45x5!": "45 x 5 é 225"
+
+  "quanto é 10 dividido por 2": "10 ÷ 2 é 5",
+  "quanto é 10 dividido por 2?": "10 ÷ 2 é 5",
+  "quanto é 10 dividido por 2!": "10 ÷ 2 é 5",
+
+  "quanto é 9 dividido por 3": "9 ÷ 3 é 3",
+  "quanto é 9 dividido por 3?": "9 ÷ 3 é 3",
+  "quanto é 9 dividido por 3!": "9 ÷ 3 é 3",
+
+  "quanto é 8 dividido por 4": "8 ÷ 4 é 2",
+  "quanto é 8 dividido por 4?": "8 ÷ 4 é 2",
+  "quanto é 8 dividido por 4!": "8 ÷ 4 é 2",
+
+  "quanto é 7 dividido por 1": "7 ÷ 1 é 7",
+  "quanto é 7 dividido por 1?": "7 ÷ 1 é 7",
+  "quanto é 7 dividido por 1!": "7 ÷ 1 é 7",
+
+  "quanto é 6 dividido por 2": "6 ÷ 2 é 3",
+  "quanto é 6 dividido por 2?": "6 ÷ 2 é 3",
+  "quanto é 6 dividido por 2!": "6 ÷ 2 é 3",
+
+  "quanto é 12 dividido por 3": "12 ÷ 3 é 4",
+  "quanto é 12 dividido por 3?": "12 ÷ 3 é 4",
+  "quanto é 12 dividido por 3!": "12 ÷ 3 é 4",
+
+  "quanto é 15 dividido por 5": "15 ÷ 5 é 3",
+  "quanto é 15 dividido por 5?": "15 ÷ 5 é 3",
+  "quanto é 15 dividido por 5!": "15 ÷ 5 é 3",
+
+  "quanto é 20 dividido por 4": "20 ÷ 4 é 5",
+  "quanto é 20 dividido por 4?": "20 ÷ 4 é 5",
+  "quanto é 20 dividido por 4!": "20 ÷ 4 é 5",
+
+  "quanto é 30 dividido por 6": "30 ÷ 6 é 5",
+  "quanto é 30 dividido por 6?": "30 ÷ 6 é 5",
+  "quanto é 30 dividido por 6!": "30 ÷ 6 é 5",
+
+  "quanto é 50 dividido por 10": "50 ÷ 10 é 5",
+  "quanto é 50 dividido por 10?": "50 ÷ 10 é 5",
+  "quanto é 50 dividido por 10!": "50 ÷ 10 é 5",
+
+  "quanto é 100 dividido por 25": "100 ÷ 25 é 4",
+  "quanto é 100 dividido por 25?": "100 ÷ 25 é 4",
+  "quanto é 100 dividido por 25!": "100 ÷ 25 é 4"
+
+  "quanto é 5 mais 7": "5 + 7 é 12",
+  "quanto é 5 mais 7?": "5 + 7 é 12",
+  "quanto é 5 mais 7!": "5 + 7 é 12",
+
+  "quanto é 9 menos 4": "9 - 4 é 5",
+  "quanto é 9 menos 4?": "9 - 4 é 5",
+  "quanto é 9 menos 4!": "9 - 4 é 5",
+
+  "quanto é 6 vezes 3": "6 x 3 é 18",
+  "quanto é 6 vezes 3?": "6 x 3 é 18",
+  "quanto é 6 vezes 3!": "6 x 3 é 18",
+
+  "quanto é 12 dividido por 4": "12 ÷ 4 é 3",
+  "quanto é 12 dividido por 4?": "12 ÷ 4 é 3",
+  "quanto é 12 dividido por 4!": "12 ÷ 4 é 3",
+
+  "qual a capital da França": "A capital da França é Paris",
+  "qual a capital da França?": "A capital da França é Paris",
+  "qual a capital da França!": "A capital da França é Paris",
+
+  "quem descobriu o Brasil": "Pedro Álvares Cabral descobriu o Brasil",
+  "quem descobriu o Brasil?": "Pedro Álvares Cabral descobriu o Brasil",
+  "quem descobriu o Brasil!": "Pedro Álvares Cabral descobriu o Brasil",
+
+  "o que é fotossíntese": "Fotossíntese é o processo pelo qual as plantas produzem seu próprio alimento usando luz solar",
+  "o que é fotossíntese?": "Fotossíntese é o processo pelo qual as plantas produzem seu próprio alimento usando luz solar",
+  "o que é fotossíntese!": "Fotossíntese é o processo pelo qual as plantas produzem seu próprio alimento usando luz solar",
+
+  "quem foi Dom Pedro I": "Dom Pedro I foi o primeiro imperador do Brasil",
+  "quem foi Dom Pedro I?": "Dom Pedro I foi o primeiro imperador do Brasil",
+  "quem foi Dom Pedro I!": "Dom Pedro I foi o primeiro imperador do Brasil",
+
+  "como se escreve 'house' em português": "'House' em português significa 'casa'",
+  "como se escreve 'house' em português?": "'House' em português significa 'casa'",
+  "como se escreve 'house' em português!": "'House' em português significa 'casa'",
+
+  "o que é um substantivo": "Substantivo é a palavra que nomeia seres, lugares, coisas ou ideias",
+  "o que é um substantivo?": "Substantivo é a palavra que nomeia seres, lugares, coisas ou ideias",
+  "o que é um substantivo!": "Substantivo é a palavra que nomeia seres, lugares, coisas ou ideias",
+
+  "o que é um verbo": "Verbo é a palavra que indica ação ou estado",
+  "o que é um verbo?": "Verbo é a palavra que indica ação ou estado",
+  "o que é um verbo!": "Verbo é a palavra que indica ação ou estado",
+
+  "qual o maior país do mundo": "O maior país do mundo é a Rússia",
+  "qual o maior país do mundo?": "O maior país do mundo é a Rússia",
+  "qual o maior país do mundo!": "O maior país do mundo é a Rússia",
+
+  "qual é o planeta mais próximo do sol": "O planeta mais próximo do Sol é Mercúrio",
+  "qual é o planeta mais próximo do sol?": "O planeta mais próximo do Sol é Mercúrio",
+  "qual é o planeta mais próximo do sol!": "O planeta mais próximo do Sol é Mercúrio",
+
+  "quem escreveu Dom Casmurro": "Dom Casmurro foi escrito por Machado de Assis",
+  "quem escreveu Dom Casmurro?": "Dom Casmurro foi escrito por Machado de Assis",
+  "quem escreveu Dom Casmurro!": "Dom Casmurro foi escrito por Machado de Assis"
+
+  "o que é célula": "Célula é a menor unidade estrutural e funcional dos seres vivos",
+  "o que é célula?": "Célula é a menor unidade estrutural e funcional dos seres vivos",
+  "o que é célula!": "Célula é a menor unidade estrutural e funcional dos seres vivos",
+
+  "qual a função do núcleo da célula": "O núcleo controla as atividades da célula e contém o DNA",
+  "qual a função do núcleo da célula?": "O núcleo controla as atividades da célula e contém o DNA",
+  "qual a função do núcleo da célula!": "O núcleo controla as atividades da célula e contém o DNA",
+
+  "o que é fotossíntese": "Fotossíntese é o processo pelo qual as plantas produzem alimento usando luz solar",
+  "o que é fotossíntese?": "Fotossíntese é o processo pelo qual as plantas produzem alimento usando luz solar",
+  "o que é fotossíntese!": "Fotossíntese é o processo pelo qual as plantas produzem alimento usando luz solar",
+
+  "o que é átomo": "Átomo é a menor unidade de um elemento químico que mantém suas propriedades",
+  "o que é átomo?": "Átomo é a menor unidade de um elemento químico que mantém suas propriedades",
+  "o que é átomo!": "Átomo é a menor unidade de um elemento químico que mantém suas propriedades",
+
+  "o que é molécula": "Molécula é a união de dois ou mais átomos ligados quimicamente",
+  "o que é molécula?": "Molécula é a união de dois ou mais átomos ligados quimicamente",
+  "o que é molécula!": "Molécula é a união de dois ou mais átomos ligados quimicamente",
+
+  "qual a diferença entre massa e peso": "Massa é a quantidade de matéria e peso é a força com que a gravidade atua sobre a massa",
+  "qual a diferença entre massa e peso?": "Massa é a quantidade de matéria e peso é a força com que a gravidade atua sobre a massa",
+  "qual a diferença entre massa e peso!": "Massa é a quantidade de matéria e peso é a força com que a gravidade atua sobre a massa",
+
+  "o que é energia cinética": "Energia cinética é a energia que um corpo possui devido ao seu movimento",
+  "o que é energia cinética?": "Energia cinética é a energia que um corpo possui devido ao seu movimento",
+  "o que é energia cinética!": "Energia cinética é a energia que um corpo possui devido ao seu movimento",
+
+  "o que é energia potencial": "Energia potencial é a energia armazenada em um corpo devido à sua posição ou configuração",
+  "o que é energia potencial?": "Energia potencial é a energia armazenada em um corpo devido à sua posição ou configuração",
+  "o que é energia potencial!": "Energia potencial é a energia armazenada em um corpo devido à sua posição ou configuração",
+
+  "o que é pressão": "Pressão é a força exercida por unidade de área",
+  "o que é pressão?": "Pressão é a força exercida por unidade de área",
+  "o que é pressão!": "Pressão é a força exercida por unidade de área",
+
+  "o que é reação química": "Reação química é o processo em que substâncias se transformam em outras",
+  "o que é reação química?": "Reação química é o processo em que substâncias se transformam em outras",
+  "o que é reação química!": "Reação química é o processo em que substâncias se transformam em outras",
+
+  "o que é densidade": "Densidade é a massa de um corpo dividida pelo seu volume",
+  "o que é densidade?": "Densidade é a massa de um corpo dividida pelo seu volume",
+  "o que é densidade!": "Densidade é a massa de um corpo dividida pelo seu volume",
+
+  "qual a função da clorofila": "A clorofila absorve a luz solar para realizar a fotossíntese",
+  "qual a função da clorofila?": "A clorofila absorve a luz solar para realizar a fotossíntese",
+  "qual a função da clorofila!": "A clorofila absorve a luz solar para realizar a fotossíntese"
+
+  "como cozinhar arroz": "Para cozinhar arroz: lave o arroz, coloque água (aproximadamente 2x a quantidade de arroz), adicione sal a gosto, leve ao fogo até a água secar e deixe cozinhar tampado por alguns minutos.",
+  "como cozinhar arroz?": "Para cozinhar arroz: lave o arroz, coloque água (aproximadamente 2x a quantidade de arroz), adicione sal a gosto, leve ao fogo até a água secar e deixe cozinhar tampado por alguns minutos.",
+  "como cozinhar arroz!": "Para cozinhar arroz: lave o arroz, coloque água (aproximadamente 2x a quantidade de arroz), adicione sal a gosto, leve ao fogo até a água secar e deixe cozinhar tampado por alguns minutos.",
+
+  "como fazer ovo frito": "Quebre o ovo em uma frigideira com óleo ou manteiga aquecida, deixe cozinhar até a clara firmar e o ponto da gema conforme seu gosto.",
+  "como fazer ovo frito?": "Quebre o ovo em uma frigideira com óleo ou manteiga aquecida, deixe cozinhar até a clara firmar e o ponto da gema conforme seu gosto.",
+  "como fazer ovo frito!": "Quebre o ovo em uma frigideira com óleo ou manteiga aquecida, deixe cozinhar até a clara firmar e o ponto da gema conforme seu gosto.",
+
+  "como plantar uma planta": "Escolha um vaso ou solo adequado, coloque terra fértil, plante a semente ou muda, regue regularmente e coloque em local com luz suficiente.",
+  "como plantar uma planta?": "Escolha um vaso ou solo adequado, coloque terra fértil, plante a semente ou muda, regue regularmente e coloque em local com luz suficiente.",
+  "como plantar uma planta!": "Escolha um vaso ou solo adequado, coloque terra fértil, plante a semente ou muda, regue regularmente e coloque em local com luz suficiente.",
+
+  "como limpar o celular": "Desligue o celular, use um pano macio e levemente umedecido com álcool isopropílico, limpe a tela e a parte traseira suavemente, evite líquidos nas entradas.",
+  "como limpar o celular?": "Desligue o celular, use um pano macio e levemente umedecido com álcool isopropílico, limpe a tela e a parte traseira suavemente, evite líquidos nas entradas.",
+  "como limpar o celular!": "Desligue o celular, use um pano macio e levemente umedecido com álcool isopropílico, limpe a tela e a parte traseira suavemente, evite líquidos nas entradas.",
+
+  "como trocar uma lâmpada": "Desligue a energia, retire a lâmpada queimada, coloque a nova lâmpada no soquete e ligue a energia novamente.",
+  "como trocar uma lâmpada?": "Desligue a energia, retire a lâmpada queimada, coloque a nova lâmpada no soquete e ligue a energia novamente.",
+  "como trocar uma lâmpada!": "Desligue a energia, retire a lâmpada queimada, coloque a nova lâmpada no soquete e ligue a energia novamente.",
+
+  "como fazer café": "Coloque água para ferver, adicione o pó de café em um filtro ou coador, despeje a água quente sobre o pó, e aguarde coar. Sirva em seguida.",
+  "como fazer café?": "Coloque água para ferver, adicione o pó de café em um filtro ou coador, despeje a água quente sobre o pó, e aguarde coar. Sirva em seguida.",
+  "como fazer café!": "Coloque água para ferver, adicione o pó de café em um filtro ou coador, despeje a água quente sobre o pó, e aguarde coar. Sirva em seguida.",
+
+  "como limpar o quarto": "Organize objetos no lugar, passe um pano ou aspirador no chão, arrume a cama, limpe poeira de móveis e mantenha o ambiente ventilado.",
+  "como limpar o quarto?": "Organize objetos no lugar, passe um pano ou aspirador no chão, arrume a cama, limpe poeira de móveis e mantenha o ambiente ventilado.",
+  "como limpar o quarto!": "Organize objetos no lugar, passe um pano ou aspirador no chão, arrume a cama, limpe poeira de móveis e mantenha o ambiente ventilado.",
+
+  "como dobrar roupas": "Separe as roupas por tipo, dobre de forma organizada, alinhe as bordas e empilhe em uma gaveta ou prateleira.",
+  "como dobrar roupas?": "Separe as roupas por tipo, dobre de forma organizada, alinhe as bordas e empilhe em uma gaveta ou prateleira.",
+  "como dobrar roupas!": "Separe as roupas por tipo, dobre de forma organizada, alinhe as bordas e empilhe em uma gaveta ou prateleira."
+
+  "como lavar roupa": "Separe roupas claras e escuras, coloque na máquina ou lave à mão com sabão adequado, enxágue bem e deixe secar.",
+  "como lavar roupa?": "Separe roupas claras e escuras, coloque na máquina ou lave à mão com sabão adequado, enxágue bem e deixe secar.",
+  "como lavar roupa!": "Separe roupas claras e escuras, coloque na máquina ou lave à mão com sabão adequado, enxágue bem e deixe secar.",
+
+  "como passar roupa": "Ajuste o ferro na temperatura correta, passe a roupa esticando o tecido para evitar vincos.",
+  "como passar roupa?": "Ajuste o ferro na temperatura correta, passe a roupa esticando o tecido para evitar vincos.",
+  "como passar roupa!": "Ajuste o ferro na temperatura correta, passe a roupa esticando o tecido para evitar vincos.",
+
+  "como organizar a cozinha": "Guarde os utensílios e alimentos no lugar certo, limpe as superfícies, jogue fora itens vencidos e mantenha tudo acessível.",
+  "como organizar a cozinha?": "Guarde os utensílios e alimentos no lugar certo, limpe as superfícies, jogue fora itens vencidos e mantenha tudo acessível.",
+  "como organizar a cozinha!": "Guarde os utensílios e alimentos no lugar certo, limpe as superfícies, jogue fora itens vencidos e mantenha tudo acessível.",
+
+  "como preparar suco de laranja": "Esprema as laranjas, coe se quiser e sirva gelado. Pode adicionar açúcar ou água a gosto.",
+  "como preparar suco de laranja?": "Esprema as laranjas, coe se quiser e sirva gelado. Pode adicionar açúcar ou água a gosto.",
+  "como preparar suco de laranja!": "Esprema as laranjas, coe se quiser e sirva gelado. Pode adicionar açúcar ou água a gosto.",
+
+  "como limpar banheiro": "Limpe a pia, vaso e box com desinfetante, passe pano ou esponja, enxágue e deixe tudo seco.",
+  "como limpar banheiro?": "Limpe a pia, vaso e box com desinfetante, passe pano ou esponja, enxágue e deixe tudo seco.",
+  "como limpar banheiro!": "Limpe a pia, vaso e box com desinfetante, passe pano ou esponja, enxágue e deixe tudo seco.",
+
+  "como organizar mochila para escola": "Coloque livros e cadernos maiores primeiro, depois estojo e objetos menores. Mantenha tudo acessível e equilibrado.",
+  "como organizar mochila para escola?": "Coloque livros e cadernos maiores primeiro, depois estojo e objetos menores. Mantenha tudo acessível e equilibrado.",
+  "como organizar mochila para escola!": "Coloque livros e cadernos maiores primeiro, depois estojo e objetos menores. Mantenha tudo acessível e equilibrado.",
+
+  "como arrumar a cama": "Estique o lençol, coloque travesseiros corretamente, dobre cobertor ou edredom e deixe organizado.",
+  "como arrumar a cama?": "Estique o lençol, coloque travesseiros corretamente, dobre cobertor ou edredom e deixe organizado.",
+  "como arrumar a cama!": "Estique o lençol, coloque travesseiros corretamente, dobre cobertor ou edredom e deixe organizado.",
+
+  "como preparar um sanduíche": "Escolha o pão, coloque recheio de sua preferência (queijo, presunto, vegetais), adicione temperos se quiser e feche o sanduíche.",
+  "como preparar um sanduíche?": "Escolha o pão, coloque recheio de sua preferência (queijo, presunto, vegetais), adicione temperos se quiser e feche o sanduíche.",
+  "como preparar um sanduíche!": "Escolha o pão, coloque recheio de sua preferência (queijo, presunto, vegetais), adicione temperos se quiser e feche o sanduíche.",
+
+  "como cuidar de uma planta suculenta": "Plante em vaso com boa drenagem, regue moderadamente e coloque em local com luz indireta.",
+  "como cuidar de uma planta suculenta?": "Plante em vaso com boa drenagem, regue moderadamente e coloque em local com luz indireta.",
+  "como cuidar de uma planta suculenta!": "Plante em vaso com boa drenagem, regue moderadamente e coloque em local com luz indireta."
+
+  "como cozinhar arroz": "Lave o arroz, coloque água (aprox. 2x a quantidade de arroz), adicione sal, leve ao fogo médio, e deixe cozinhar tampado até a água secar.",
+  "como cozinhar arroz?": "Lave o arroz, coloque água (aprox. 2x a quantidade de arroz), adicione sal, leve ao fogo médio, e deixe cozinhar tampado até a água secar.",
+  "como cozinhar arroz!": "Lave o arroz, coloque água (aprox. 2x a quantidade de arroz), adicione sal, leve ao fogo médio, e deixe cozinhar tampado até a água secar.",
+
+  "como fazer ovo cozido": "Coloque os ovos em uma panela com água, leve ao fogo até ferver, cozinhe por 8 a 10 minutos, depois retire e coloque em água fria.",
+  "como fazer ovo cozido?": "Coloque os ovos em uma panela com água, leve ao fogo até ferver, cozinhe por 8 a 10 minutos, depois retire e coloque em água fria.",
+  "como fazer ovo cozido!": "Coloque os ovos em uma panela com água, leve ao fogo até ferver, cozinhe por 8 a 10 minutos, depois retire e coloque em água fria.",
+
+  "como fritar ovo": "Aqueça uma frigideira com óleo ou manteiga, quebre o ovo na frigideira, cozinhe até a clara firmar e a gema no ponto desejado.",
+  "como fritar ovo?": "Aqueça uma frigideira com óleo ou manteiga, quebre o ovo na frigideira, cozinhe até a clara firmar e a gema no ponto desejado.",
+  "como fritar ovo!": "Aqueça uma frigideira com óleo ou manteiga, quebre o ovo na frigideira, cozinhe até a clara firmar e a gema no ponto desejado.",
+
+  "como preparar suco de laranja": "Esprema as laranjas, coe se quiser, adicione água ou açúcar a gosto e sirva gelado.",
+  "como preparar suco de laranja?": "Esprema as laranjas, coe se quiser, adicione água ou açúcar a gosto e sirva gelado.",
+  "como preparar suco de laranja!": "Esprema as laranjas, coe se quiser, adicione água ou açúcar a gosto e sirva gelado.",
+
+  "como fazer macarrão": "Ferva água com sal, adicione o macarrão, cozinhe até ficar al dente, escorra e sirva com molho de sua preferência.",
+  "como fazer macarrão?": "Ferva água com sal, adicione o macarrão, cozinhe até ficar al dente, escorra e sirva com molho de sua preferência.",
+  "como fazer macarrão!": "Ferva água com sal, adicione o macarrão, cozinhe até ficar al dente, escorra e sirva com molho de sua preferência.",
+
+  "como preparar omelete": "Bata ovos com sal e temperos, aqueça uma frigideira com óleo ou manteiga, despeje a mistura, cozinhe e dobre ao ponto desejado.",
+  "como preparar omelete?": "Bata ovos com sal e temperos, aqueça uma frigideira com óleo ou manteiga, despeje a mistura, cozinhe e dobre ao ponto desejado.",
+  "como preparar omelete!": "Bata ovos com sal e temperos, aqueça uma frigideira com óleo ou manteiga, despeje a mistura, cozinhe e dobre ao ponto desejado.",
+
+  "como fazer café": "Ferva água, coloque o pó de café em filtro ou coador, despeje a água quente sobre o pó e sirva em seguida.",
+  "como fazer café?": "Ferva água, coloque o pó de café em filtro ou coador, despeje a água quente sobre o pó e sirva em seguida.",
+  "como fazer café!": "Ferva água, coloque o pó de café em filtro ou coador, despeje a água quente sobre o pó e sirva em seguida.",
+
+  "como preparar pão de forma": "Misture farinha, fermento, água, sal e açúcar, sove a massa, deixe crescer, molde em forma de pão e asse até dourar.",
+  "como preparar pão de forma?": "Misture farinha, fermento, água, sal e açúcar, sove a massa, deixe crescer, molde em forma de pão e asse até dourar.",
+  "como preparar pão de forma!": "Misture farinha, fermento, água, sal e açúcar, sove a massa, deixe crescer, molde em forma de pão e asse até dourar.",
+
+  "como fazer bolo de chocolate": "Misture ovos, açúcar, manteiga, farinha, chocolate em pó e fermento, bata bem, despeje em forma untada e asse até o bolo crescer e dourar.",
+  "como fazer bolo de chocolate?": "Misture ovos, açúcar, manteiga, farinha, chocolate em pó e fermento, bata bem, despeje em forma untada e asse até o bolo crescer e dourar.",
+  "como fazer bolo de chocolate!": "Misture ovos, açúcar, manteiga, farinha, chocolate em pó e fermento, bata bem, despeje em forma untada e asse até o bolo crescer e dourar.",
+
+  "como preparar salada": "Lave e corte os vegetais, misture em uma tigela, adicione tempero a gosto (azeite, sal, limão) e sirva fresca.",
+  "como preparar salada?": "Lave e corte os vegetais, misture em uma tigela, adicione tempero a gosto (azeite, sal, limão) e sirva fresca.",
+  "como preparar salada!": "Lave e corte os vegetais, misture em uma tigela, adicione tempero a gosto (azeite, sal, limão) e sirva fresca."
