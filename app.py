@@ -257,7 +257,6 @@ for idx, msg in enumerate(st.session_state.mensagens):
         st.write(msg["texto"])
         if msg.get("badge"):
             st.markdown(f'<span class="confianca-badge">{msg["badge"]}</span>', unsafe_allow_html=True)
-        if msg["autor"] == "assistant":
             
 
 # =====================================
