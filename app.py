@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import os
 import time
-from rapidfuzz import process, fuzz
+import difflib
 
 # =====================================
 # CONFIGURAÇÃO DA PÁGINA
@@ -86,17 +86,16 @@ def procurar_resposta(pergunta):
     if not memoria:
         return None
 
-    # Procurar pergunta parecida
-    resultado = process.extractOne(
+    # Procurar pergunta parecida (similaridade >= 75%)
+    candidatos = difflib.get_close_matches(
         pergunta,
         memoria.keys(),
-        scorer=fuzz.ratio
+        n=1,
+        cutoff=0.75
     )
 
-    if resultado:
-        pergunta_encontrada, similaridade, _ = resultado
-        if similaridade >= 75:
-            return memoria[pergunta_encontrada]
+    if candidatos:
+        return memoria[candidatos[0]]
 
     return None
 
