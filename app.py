@@ -127,20 +127,6 @@ def procurar_resposta(pergunta):
 
     return None, None, 0.0
 
-
-def botao_copiar(texto, key):
-    """Renderiza um botãozinho de copiar para a área de transferência."""
-    texto_js = json.dumps(texto)
-    st.markdown(
-        f'''
-        <button class="copiar-btn" onclick="navigator.clipboard.writeText({texto_js})">
-            📋 Copiar
-        </button>
-        ''',
-        unsafe_allow_html=True
-    )
-
-
 # Perguntas sugeridas para quem não sabe por onde começar
 SUGESTOES = [
     "oi",
