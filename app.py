@@ -258,8 +258,6 @@ for idx, msg in enumerate(st.session_state.mensagens):
         if msg.get("badge"):
             st.markdown(f'<span class="confianca-badge">{msg["badge"]}</span>', unsafe_allow_html=True)
         if msg["autor"] == "assistant":
-            botao_copiar(msg["texto"], key=f"copiar_{idx}")
-
 
 # =====================================
 # CHAT
@@ -310,8 +308,6 @@ if pergunta:
 
         if badge:
             st.markdown(f'<span class="confianca-badge">{badge}</span>', unsafe_allow_html=True)
-
-        botao_copiar(texto_final, key="copiar_novo")
 
     st.session_state.mensagens.append(
         {
