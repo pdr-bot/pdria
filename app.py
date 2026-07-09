@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import os
 import time
+import random
 import difflib
 
 # =====================================
@@ -9,13 +10,17 @@ import difflib
 # =====================================
 
 st.set_page_config(
-    page_title="IA que Aprende",
-    page_icon="🤖",
+    page_title="EVA - Assistente Virtual Evolutiva",
+    page_icon="🧬",
     layout="wide"
 )
 
+NOME_IA = "EVA"
+AVATAR_IA = "🧬"
+AVATAR_USER = "🙂"
+
 # =====================================
-# ESTILO (deixa a interface mais bonita)
+# ESTILO
 # =====================================
 
 st.markdown("""
@@ -44,6 +49,15 @@ st.markdown("""
     }
     .stProgress > div > div > div > div {
         background: linear-gradient(90deg, #7f5af0, #2cb67d);
+    }
+    .confianca-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 2px 10px;
+        border-radius: 999px;
+        margin-top: 4px;
+        background-color: #2a2d3a;
+        color: #b8bcc8;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -76,17 +90,16 @@ def salvar():
 
 
 def procurar_resposta(pergunta):
-    """Procura resposta exata primeiro, depois por similaridade (fuzzy)."""
+    """Procura resposta exata primeiro, depois por similaridade (fuzzy).
+    Retorna (resposta, tipo, score) onde tipo é 'exata' ou 'aproximada'."""
     pergunta = pergunta.lower().strip()
 
-    # Resposta exata
     if pergunta in memoria:
-        return memoria[pergunta]
+        return memoria[pergunta], "exata", 1.0
 
     if not memoria:
-        return None
+        return None, None, 0.0
 
-    # Procurar pergunta parecida (similaridade >= 75%)
     candidatos = difflib.get_close_matches(
         pergunta,
         memoria.keys(),
@@ -95,9 +108,21 @@ def procurar_resposta(pergunta):
     )
 
     if candidatos:
-        return memoria[candidatos[0]]
+        score = difflib.SequenceMatcher(None, pergunta, candidatos[0]).ratio()
+        return memoria[candidatos[0]], "aproximada", score
 
-    return None
+    return None, None, 0.0
+
+
+# Perguntas sugeridas para quem não sabe por onde começar
+SUGESTOES = [
+    "oi",
+    "qual a capital do brasil",
+    "quanto é 7x7",
+    "receita de brigadeiro",
+    "quem foi ronnie coleman",
+    "por que o céu é azul",
+]
 
 
 # =====================================
@@ -116,51 +141,97 @@ if "pergunta_atual" not in st.session_state:
 if "aprendidos" not in st.session_state:
     st.session_state.aprendidos = 0
 
+if "nao_soube" not in st.session_state:
+    st.session_state.nao_soube = 0
+
+if "pergunta_pendente" not in st.session_state:
+    st.session_state.pergunta_pendente = None
+
 
 # =====================================
 # SIDEBAR
 # =====================================
 
-st.sidebar.title("🤖 IA que Aprende")
+st.sidebar.title(f"{AVATAR_IA} {NOME_IA}")
+st.sidebar.caption("Assistente Virtual Evolutiva")
 
 st.sidebar.markdown("---")
 
 st.sidebar.subheader("📊 Estatísticas")
 
-st.sidebar.metric("Conhecimentos", len(memoria))
-st.sidebar.metric("Mensagens", len(st.session_state.mensagens))
-st.sidebar.metric("Aprendidos nesta sessão", st.session_state.aprendidos)
+col_a, col_b = st.sidebar.columns(2)
+col_a.metric("Conhecimentos", len(memoria))
+col_b.metric("Mensagens", len(st.session_state.mensagens))
+
+col_c, col_d = st.sidebar.columns(2)
+col_c.metric("Aprendidos", st.session_state.aprendidos)
+col_d.metric("Não soube", st.session_state.nao_soube)
 
 st.sidebar.markdown("---")
 
-st.sidebar.subheader("🧠 Últimos conhecimentos")
+st.sidebar.subheader("🔍 Buscar na memória")
+busca = st.sidebar.text_input("Digite um termo...", label_visibility="collapsed", placeholder="Ex: futebol, receita, brasil...")
 
-ultimos = list(memoria.keys())[-5:]
-
-if ultimos:
-    for item in reversed(ultimos):
-        st.sidebar.write("•", item)
+if busca.strip():
+    encontrados = [k for k in memoria.keys() if busca.lower().strip() in k.lower()][:8]
+    if encontrados:
+        for item in encontrados:
+            with st.sidebar.expander(f"💬 {item}"):
+                st.write(memoria[item])
+    else:
+        st.sidebar.caption("Nada encontrado com esse termo.")
 else:
-    st.sidebar.write("Nenhum conhecimento.")
+    st.sidebar.subheader("🧠 Últimos conhecimentos")
+    ultimos = list(memoria.keys())[-5:]
+    if ultimos:
+        for item in reversed(ultimos):
+            st.sidebar.write("•", item)
+    else:
+        st.sidebar.write("Nenhum conhecimento.")
 
 st.sidebar.markdown("---")
 
-if st.sidebar.button("🗑 Limpar conversa"):
-    st.session_state.mensagens = []
-    st.rerun()
+col_e, col_f = st.sidebar.columns(2)
+
+with col_e:
+    if st.button("🗑 Limpar chat"):
+        st.session_state.mensagens = []
+        st.rerun()
+
+with col_f:
+    st.download_button(
+        "⬇️ Exportar",
+        data=json.dumps(memoria, ensure_ascii=False, indent=4),
+        file_name="memoria_eva.json",
+        mime="application/json",
+        use_container_width=True
+    )
 
 
 # =====================================
 # TÍTULO
 # =====================================
 
-st.title("🤖 IA que Aprende")
+st.title(f"{AVATAR_IA} {NOME_IA}")
+st.caption("Assistente Virtual Evolutiva — aprende com cada conversa")
 
-progresso = min(len(memoria) / 100, 1.0)
-
+progresso = min(len(memoria) / 400, 1.0)
 st.progress(progresso)
+st.caption(f"{len(memoria)} conhecimentos na base")
 
-st.caption(f"{len(memoria)} conhecimentos aprendidos")
+
+# =====================================
+# MENSAGEM DE BOAS-VINDAS + SUGESTÕES
+# =====================================
+
+if not st.session_state.mensagens:
+    st.info(f"👋 Oi! Eu sou a **{NOME_IA}**. Pode me perguntar qualquer coisa, ou clicar em uma sugestão abaixo pra começar:")
+
+    cols = st.columns(3)
+    for i, sugestao in enumerate(SUGESTOES):
+        with cols[i % 3]:
+            if st.button(sugestao, key=f"sugestao_{i}", use_container_width=True):
+                st.session_state.pergunta_pendente = sugestao
 
 
 # =====================================
@@ -168,15 +239,21 @@ st.caption(f"{len(memoria)} conhecimentos aprendidos")
 # =====================================
 
 for msg in st.session_state.mensagens:
-    with st.chat_message(msg["autor"]):
+    avatar = AVATAR_IA if msg["autor"] == "assistant" else AVATAR_USER
+    with st.chat_message(msg["autor"], avatar=avatar):
         st.write(msg["texto"])
+        if msg.get("badge"):
+            st.markdown(f'<span class="confianca-badge">{msg["badge"]}</span>', unsafe_allow_html=True)
 
 
 # =====================================
 # CHAT
 # =====================================
 
-pergunta = st.chat_input("Digite sua pergunta...")
+pergunta_digitada = st.chat_input(f"Digite sua pergunta para a {NOME_IA}...")
+
+pergunta = pergunta_digitada or st.session_state.pergunta_pendente
+st.session_state.pergunta_pendente = None
 
 if pergunta:
 
@@ -187,26 +264,33 @@ if pergunta:
         }
     )
 
-    with st.spinner("Pensando..."):
-        time.sleep(1)
+    with st.spinner(f"{NOME_IA} está pensando..."):
+        time.sleep(0.6)
 
-        resposta = procurar_resposta(pergunta)
+        resposta, tipo, score = procurar_resposta(pergunta)
 
         if resposta is not None:
+
+            badge = None
+            if tipo == "aproximada":
+                badge = f"🔎 correspondência aproximada ({int(score * 100)}% de similaridade)"
 
             st.session_state.mensagens.append(
                 {
                     "autor": "assistant",
-                    "texto": resposta
+                    "texto": resposta,
+                    "badge": badge
                 }
             )
 
         else:
 
+            st.session_state.nao_soube += 1
+
             st.session_state.mensagens.append(
                 {
                     "autor": "assistant",
-                    "texto": "🤔 Ainda não sei responder isso.\n\nPode me ensinar abaixo."
+                    "texto": f"🤔 Ainda não sei responder isso.\n\nPode me ensinar abaixo, assim eu evoluo!"
                 }
             )
 
@@ -217,14 +301,14 @@ if pergunta:
 
 
 # =====================================
-# ENSINAR IA
+# ENSINAR A EVA
 # =====================================
 
 if st.session_state.ensinar:
 
     st.divider()
 
-    st.subheader("📚 Ensinar IA")
+    st.subheader(f"📚 Ensinar a {NOME_IA}")
     st.caption(f"Pergunta: **{st.session_state.pergunta_atual}**")
 
     resposta_nova = st.text_input(
@@ -251,7 +335,7 @@ if st.session_state.ensinar:
             st.session_state.mensagens.append(
                 {
                     "autor": "assistant",
-                    "texto": "✅ Aprendi! Obrigado por me ensinar."
+                    "texto": "✅ Aprendi! Obrigado por me ajudar a evoluir."
                 }
             )
 
