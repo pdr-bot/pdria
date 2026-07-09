@@ -59,6 +59,20 @@ st.markdown("""
         background-color: #2a2d3a;
         color: #b8bcc8;
     }
+    .copiar-btn {
+        background-color: #1e2130;
+        color: #b8bcc8;
+        border: 1px solid #2a2d3a;
+        border-radius: 8px;
+        padding: 3px 10px;
+        font-size: 0.72rem;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+    .copiar-btn:hover {
+        background-color: #2a2d3a;
+        color: #ffffff;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -112,6 +126,19 @@ def procurar_resposta(pergunta):
         return memoria[candidatos[0]], "aproximada", score
 
     return None, None, 0.0
+
+
+def botao_copiar(texto, key):
+    """Renderiza um botãozinho de copiar para a área de transferência."""
+    texto_js = json.dumps(texto)
+    st.markdown(
+        f'''
+        <button class="copiar-btn" onclick="navigator.clipboard.writeText({texto_js})">
+            📋 Copiar
+        </button>
+        ''',
+        unsafe_allow_html=True
+    )
 
 
 # Perguntas sugeridas para quem não sabe por onde começar
@@ -238,12 +265,14 @@ if not st.session_state.mensagens:
 # HISTÓRICO
 # =====================================
 
-for msg in st.session_state.mensagens:
+for idx, msg in enumerate(st.session_state.mensagens):
     avatar = AVATAR_IA if msg["autor"] == "assistant" else AVATAR_USER
     with st.chat_message(msg["autor"], avatar=avatar):
         st.write(msg["texto"])
         if msg.get("badge"):
             st.markdown(f'<span class="confianca-badge">{msg["badge"]}</span>', unsafe_allow_html=True)
+        if msg["autor"] == "assistant":
+            botao_copiar(msg["texto"], key=f"copiar_{idx}")
 
 
 # =====================================
@@ -264,38 +293,47 @@ if pergunta:
         }
     )
 
-    with st.spinner(f"{NOME_IA} está pensando..."):
-        time.sleep(0.6)
+    with st.chat_message("user", avatar=AVATAR_USER):
+        st.write(pergunta)
 
-        resposta, tipo, score = procurar_resposta(pergunta)
+    with st.chat_message("assistant", avatar=AVATAR_IA):
+        placeholder = st.empty()
+
+        with st.spinner(f"{NOME_IA} está pensando..."):
+            time.sleep(0.5)
+            resposta, tipo, score = procurar_resposta(pergunta)
+
+        badge = None
 
         if resposta is not None:
-
-            badge = None
+            texto_final = resposta
             if tipo == "aproximada":
                 badge = f"🔎 correspondência aproximada ({int(score * 100)}% de similaridade)"
-
-            st.session_state.mensagens.append(
-                {
-                    "autor": "assistant",
-                    "texto": resposta,
-                    "badge": badge
-                }
-            )
-
         else:
-
             st.session_state.nao_soube += 1
-
-            st.session_state.mensagens.append(
-                {
-                    "autor": "assistant",
-                    "texto": f"🤔 Ainda não sei responder isso.\n\nPode me ensinar abaixo, assim eu evoluo!"
-                }
-            )
-
             st.session_state.ensinar = True
             st.session_state.pergunta_atual = pergunta.lower().strip()
+            texto_final = "🤔 Ainda não sei responder isso.\n\nPode me ensinar abaixo, assim eu evoluo!"
+
+        # Efeito de digitação, letra por letra
+        texto_exibido = ""
+        for char in texto_final:
+            texto_exibido += char
+            placeholder.markdown(texto_exibido)
+            time.sleep(0.012)
+
+        if badge:
+            st.markdown(f'<span class="confianca-badge">{badge}</span>', unsafe_allow_html=True)
+
+        botao_copiar(texto_final, key="copiar_novo")
+
+    st.session_state.mensagens.append(
+        {
+            "autor": "assistant",
+            "texto": texto_final,
+            "badge": badge
+        }
+    )
 
     st.rerun()
 
