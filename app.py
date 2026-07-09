@@ -1,64 +1,120 @@
 import streamlit as st
 import json
 import os
+import time
 
-st.title("🤖 IA que aprende")
+st.set_page_config(
+    page_title="IA que Aprende",
+    page_icon="🤖",
+    layout="wide"
+)
 
-# Arquivo que contém respostas pré-definidas
-base_arquivo = "base.json"  # <- seu arquivo com respostas iniciais
-memoria_arquivo = "memoria.json"  # <- arquivo que vai armazenar aprendizado novo
+st.title("🤖 IA que Aprende")
+st.caption("Uma IA que aprende novas respostas com o usuário.")
 
-# Carregar base
+base_arquivo = "base.json"
+memoria_arquivo = "memoria.json"
+
+# -------------------------
+# Carregar memória
+# -------------------------
 if os.path.exists(base_arquivo):
     with open(base_arquivo, "r", encoding="utf-8") as f:
         memoria = json.load(f)
 else:
     memoria = {}
 
-# Carregar memória já aprendida, se existir
 if os.path.exists(memoria_arquivo):
     with open(memoria_arquivo, "r", encoding="utf-8") as f:
-        memoria_aprendida = json.load(f)
-        memoria.update(memoria_aprendida)
+        memoria.update(json.load(f))
 
-# Função para salvar aprendizado novo
 def salvar():
     with open(memoria_arquivo, "w", encoding="utf-8") as f:
         json.dump(memoria, f, ensure_ascii=False, indent=4)
 
-# Session state
-if "resposta" not in st.session_state:
-    st.session_state.resposta = ""
+# -------------------------
+# Session State
+# -------------------------
+if "mensagens" not in st.session_state:
+    st.session_state.mensagens = []
+
 if "ensinar" not in st.session_state:
     st.session_state.ensinar = False
+
 if "pergunta_atual" not in st.session_state:
     st.session_state.pergunta_atual = ""
 
-# Input
-pergunta = st.text_input("Digite sua pergunta:")
+# -------------------------
+# Histórico do Chat
+# -------------------------
+for msg in st.session_state.mensagens:
+    with st.chat_message(msg["autor"]):
+        st.write(msg["texto"])
 
-def processar():
-    pergunta_lower = pergunta.strip().lower()
-    if pergunta_lower in memoria:
-        st.session_state.resposta = memoria[pergunta_lower]
-        st.session_state.ensinar = False
-    else:
-        st.session_state.resposta = f"Não sei responder '{pergunta}'. Me ensine!"
-        st.session_state.ensinar = True
-        st.session_state.pergunta_atual = pergunta_lower
+# -------------------------
+# Entrada do usuário
+# -------------------------
+pergunta = st.chat_input("Digite sua pergunta...")
 
-if st.button("Enviar") and pergunta:
-    processar()
+if pergunta:
 
-# Ensino de nova resposta
+    st.session_state.mensagens.append(
+        {"autor": "user", "texto": pergunta}
+    )
+
+    pergunta_lower = pergunta.lower().strip()
+
+    with st.spinner("Pensando..."):
+        time.sleep(1)
+
+        if pergunta_lower in memoria:
+
+            resposta = memoria[pergunta_lower]
+
+            st.session_state.mensagens.append(
+                {"autor": "assistant", "texto": resposta}
+            )
+
+            st.rerun()
+
+        else:
+
+            resposta = "🤔 Ainda não sei responder isso.\n\nPode me ensinar?"
+
+            st.session_state.mensagens.append(
+                {"autor": "assistant", "texto": resposta}
+            )
+
+            st.session_state.ensinar = True
+            st.session_state.pergunta_atual = pergunta_lower
+
+            st.rerun()
+
+# -------------------------
+# Ensinar IA
+# -------------------------
 if st.session_state.ensinar:
-    resposta_usuario = st.text_input(f"Qual seria a resposta correta para '{st.session_state.pergunta_atual}'?")
-    if st.button("Salvar Resposta") and resposta_usuario:
-        memoria[st.session_state.pergunta_atual] = resposta_usuario
+
+    st.divider()
+
+    st.subheader("📚 Ensinar IA")
+
+    resposta_nova = st.text_input(
+        "Digite a resposta correta:"
+    )
+
+    if st.button("Salvar Conhecimento"):
+
+        memoria[st.session_state.pergunta_atual] = resposta_nova
         salvar()
-        st.session_state.resposta = "Perfeito! Agora eu sei essa resposta."
+
+        st.session_state.mensagens.append(
+            {
+                "autor": "assistant",
+                "texto": "✅ Aprendi! Nunca mais vou esquecer essa resposta."
+            }
+        )
+
         st.session_state.ensinar = False
 
-# Mostrar resposta
-if st.session_state.resposta:
-    st.write(st.session_state.resposta)
+        st.rerun()
