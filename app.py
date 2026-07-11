@@ -4,6 +4,7 @@ import os
 import time
 import random
 import difflib
+from internet import pesquisar
 
 # =====================================
 # CONFIGURAÇÃO DA PÁGINA
