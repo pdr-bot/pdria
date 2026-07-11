@@ -1,11 +1,17 @@
 from ddgs import DDGS
 import streamlit as st
 from groq import Groq
+import time
+import random
 
 
 def buscar_bruto(pergunta):
-    """Busca resultados crus no DuckDuckGo."""
+    """Busca resultados crus no DuckDuckGo, com um pequeno delay
+    antes da requisição pra evitar bloqueio por rate limit."""
     try:
+        # delay aleatório entre 1 e 2.5 segundos antes de buscar
+        time.sleep(random.uniform(1, 2.5))
+
         with DDGS() as ddgs:
             resultados = list(ddgs.text(
                 pergunta,
