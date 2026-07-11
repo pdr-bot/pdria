@@ -294,27 +294,28 @@ if pergunta:
             texto_final = resposta
             if tipo == "aproximada":
                 badge = f"🔎 correspondência aproximada ({int(score * 100)}% de similaridade)"
-        else:
+               else:
 
-    resultado = pesquisar(pergunta)
+            resultado = pesquisar(pergunta)
 
-    if resultado:
+            if resultado:
 
-        texto_final = resultado
+                texto_final = resultado
 
-        memoria[pergunta.lower()] = resultado
-        salvar()
+                memoria[pergunta.lower()] = resultado
+                salvar()
 
-    else:
+            else:
 
-        st.session_state.nao_soube += 1
-        st.session_state.ensinar = True
-        st.session_state.pergunta_atual = pergunta.lower().strip()
+                st.session_state.nao_soube += 1
+                st.session_state.ensinar = True
+                st.session_state.pergunta_atual = pergunta.lower().strip()
 
-        texto_final = (
-            "🤔 Não encontrei uma resposta na minha memória "
-            "nem consegui pesquisar na internet."
-        )der isso.\n\nPode me ensinar abaixo, assim eu evoluo!"
+                texto_final = (
+                    "🤔 Não encontrei uma resposta na minha memória "
+                    "nem consegui pesquisar na internet.\n\n"
+                    "Pode me ensinar abaixo, assim eu evoluo!"
+                )
 
         # Efeito de digitação, letra por letra
         texto_exibido = ""
