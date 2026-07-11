@@ -282,6 +282,7 @@ if pergunta:
         st.write(pergunta)
 
     with st.chat_message("assistant", avatar=AVATAR_IA):
+
         placeholder = st.empty()
 
         with st.spinner(f"{NOME_IA} está pensando..."):
@@ -291,10 +292,13 @@ if pergunta:
         badge = None
 
         if resposta is not None:
+
             texto_final = resposta
+
             if tipo == "aproximada":
                 badge = f"🔎 correspondência aproximada ({int(score * 100)}% de similaridade)"
-               else:
+
+        else:
 
             resultado = pesquisar(pergunta)
 
@@ -317,15 +321,18 @@ if pergunta:
                     "Pode me ensinar abaixo, assim eu evoluo!"
                 )
 
-        # Efeito de digitação, letra por letra
         texto_exibido = ""
+
         for char in texto_final:
             texto_exibido += char
             placeholder.markdown(texto_exibido)
             time.sleep(0.012)
 
         if badge:
-            st.markdown(f'<span class="confianca-badge">{badge}</span>', unsafe_allow_html=True)
+            st.markdown(
+                f'<span class="confianca-badge">{badge}</span>',
+                unsafe_allow_html=True
+            )
 
     st.session_state.mensagens.append(
         {
@@ -336,7 +343,6 @@ if pergunta:
     )
 
     st.rerun()
-
 
 # =====================================
 # ENSINAR A EVA
