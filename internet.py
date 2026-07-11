@@ -9,12 +9,12 @@ def pesquisar(pergunta):
             return None
 
         resposta = ""
-
         for r in resultados:
             resposta += f"• {r['title']}\n"
             resposta += f"{r['body']}\n\n"
 
-        return resposta
+        return resposta.strip()
 
-    except:
+    except Exception as e:
+        print(f"Erro na pesquisa: {e}")
         return None
