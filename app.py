@@ -3,6 +3,7 @@ import json
 import os
 import time
 import random
+import re
 import difflib
 from internet import pesquisar
 
@@ -104,29 +105,113 @@ def salvar():
         json.dump(memoria, f, ensure_ascii=False, indent=4)
 
 
-def procurar_resposta(pergunta):
-    """Procura resposta exata primeiro, depois por similaridade (fuzzy).
-    Retorna (resposta, tipo, score) onde tipo é 'exata' ou 'aproximada'."""
-    pergunta = pergunta.lower().strip()
+# =====================================
+# BUSCA NA MEMÓRIA (por palavras-chave, não por string bruta)
+# =====================================
 
-    if pergunta in memoria:
-        return memoria[pergunta], "exata", 1.0
+# Prefixos comuns que não mudam o assunto da pergunta.
+# Removidos antes de comparar, para "receita de brigadeiro" e
+# "me diga a receita de brigadeiro" caírem na mesma busca.
+PREFIXOS_IRRELEVANTES = [
+    "me diga", "me fale", "me fale sobre", "me explica", "me explique",
+    "por favor", "voce pode me dizer", "você pode me dizer",
+    "voce sabe", "você sabe", "gostaria de saber", "queria saber",
+    "diga-me", "diga me", "diz ai", "diz aí", "fale sobre",
+]
+
+# Palavras muito comuns que não ajudam a identificar o assunto.
+PALAVRAS_VAZIAS = {
+    "a", "o", "os", "as", "de", "da", "do", "das", "dos", "um", "uma",
+    "uns", "umas", "e", "eu", "me", "por", "favor", "que", "qual",
+    "quais", "quem", "como", "para", "com", "em", "se", "voce", "você",
+    "pode", "sabe", "é", "sao", "são", "no", "na", "nos", "nas",
+}
+
+
+def normalizar(texto):
+    """Minúsculas, sem acentuação de pontuação, sem prefixos de cortesia."""
+    t = texto.lower().strip()
+    t = re.sub(r"[^\w\sáéíóúãõâêîôûàèìòùçñ]", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+
+    mudou = True
+    while mudou:
+        mudou = False
+        for prefixo in PREFIXOS_IRRELEVANTES:
+            if t.startswith(prefixo + " "):
+                t = t[len(prefixo):].strip()
+                mudou = True
+
+    return t
+
+
+def palavras_chave(texto):
+    """Extrai o conjunto de palavras relevantes (sem stopwords, len > 2)."""
+    return {
+        w for w in normalizar(texto).split()
+        if w not in PALAVRAS_VAZIAS and len(w) > 2
+    }
+
+
+def procurar_resposta(pergunta):
+    """Procura resposta exata primeiro, depois por sobreposição de
+    palavras-chave (não por similaridade bruta de caracteres, que
+    gerava falsos positivos entre perguntas sem relação nenhuma).
+    Retorna (resposta, tipo, score) onde tipo é 'exata' ou 'aproximada'."""
+
+    pergunta_lower = pergunta.lower().strip()
+    pergunta_norm = normalizar(pergunta)
+
+    # Match exato — com ou sem prefixos de cortesia
+    if pergunta_lower in memoria:
+        return memoria[pergunta_lower], "exata", 1.0
+    if pergunta_norm in memoria:
+        return memoria[pergunta_norm], "exata", 1.0
 
     if not memoria:
         return None, None, 0.0
 
-    candidatos = difflib.get_close_matches(
-        pergunta,
-        memoria.keys(),
-        n=1,
-        cutoff=0.75
-    )
+    palavras_pergunta = palavras_chave(pergunta)
+    if not palavras_pergunta:
+        return None, None, 0.0
 
-    if candidatos:
-        score = difflib.SequenceMatcher(None, pergunta, candidatos[0]).ratio()
-        return memoria[candidatos[0]], "aproximada", score
+    melhor_chave = None
+    melhor_score = 0.0
+
+    for chave in memoria.keys():
+        palavras_candidata = palavras_chave(chave)
+        if not palavras_candidata:
+            continue
+
+        intersecao = palavras_pergunta & palavras_candidata
+        if not intersecao:
+            continue  # sem nenhuma palavra em comum, nem vale comparar
+
+        uniao = palavras_pergunta | palavras_candidata
+        jaccard = len(intersecao) / len(uniao)
+
+        # cobertura: quanto da pergunta do usuário está coberta pela chave
+        cobertura = len(intersecao) / len(palavras_pergunta)
+
+        # similaridade de caracteres só como desempate fino
+        char_sim = difflib.SequenceMatcher(
+            None, pergunta_norm, normalizar(chave)
+        ).ratio()
+
+        score = (jaccard * 0.6) + (cobertura * 0.25) + (char_sim * 0.15)
+
+        # exige cobertura mínima de metade das palavras-chave da pergunta
+        # -> evita que "receita de brigadeiro" combine com algo tipo
+        #    "receita de bolo de fubá" ou assuntos totalmente diferentes
+        if cobertura >= 0.5 and score > melhor_score:
+            melhor_score = score
+            melhor_chave = chave
+
+    if melhor_chave and melhor_score >= 0.45:
+        return memoria[melhor_chave], "aproximada", melhor_score
 
     return None, None, 0.0
+
 
 # Perguntas sugeridas para quem não sabe por onde começar
 SUGESTOES = [
